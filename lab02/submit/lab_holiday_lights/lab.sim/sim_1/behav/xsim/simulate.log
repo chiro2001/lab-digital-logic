@@ -1,0 +1,7 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+index 6 finished
+====================================
+Test end!
+----PASS!!!
+$finish called at time : 1005 ns : File "D:/Programs/lab-digital-logic/lab02/lab_holiday_lights/lab.srcs/sim_1/imports/holiday_lights/testbench.v" Line 88
