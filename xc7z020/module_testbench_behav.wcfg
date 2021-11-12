@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="module_testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="module_testbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="810000001fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="193"></NameColumnWidth>
+      <ValueColumnWidth column_width="106"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="/module_testbench/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/module_testbench/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/module_testbench/button" type="logic">
+      <obj_property name="ElementShortName">button</obj_property>
+      <obj_property name="ObjectShortName">button</obj_property>
+   </wvobject>
+   <wvobject fp_name="/module_testbench/u0/flowLights/ledReg" type="array">
+      <obj_property name="ElementShortName">ledReg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ledReg[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/module_testbench/led" type="array">
+      <obj_property name="ElementShortName">led[15:0]</obj_property>
+      <obj_property name="ObjectShortName">led[15:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>

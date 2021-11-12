@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Programs/lab-digital-logic/xc7z020/xc7z020.srcs/sources_1/new/FlowLightsWrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FlowLights
+INFO: [VRFC 10-311] analyzing module FlowLightsWrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Programs/lab-digital-logic/xc7z020/xc7z020.srcs/sim_1/new/module_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_testbench
