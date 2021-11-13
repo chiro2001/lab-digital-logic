@@ -1,0 +1,19 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+res = 0000000000000001
+generated: 0000000000000010
+res = 0000000000000011
+generated: 0000000000100000
+res = 0000000000000111
+generated: 0000000001100000
+res = 0000000000001111
+generated: 0000000011100000
+res = 0000000000011111
+generated: 0000000111100000
+res = 0000000000111111
+generated: 0000001111100000
+index 6 finished
+====================================
+Test end!
+----PASS!!!
+$finish called at time : 1005 ns : File "D:/Programs/lab-digital-logic/lab02/lab_holiday_lights_chisel/lab.srcs/sim_1/imports/holiday_lights/testbench.v" Line 88

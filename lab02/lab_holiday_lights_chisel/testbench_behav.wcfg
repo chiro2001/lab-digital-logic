@@ -17,9 +17,9 @@
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="193"></NameColumnWidth>
-      <ValueColumnWidth column_width="106"></ValueColumnWidth>
+      <ValueColumnWidth column_width="101"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="13" />
+   <WVObjectSize size="14" />
    <wvobject fp_name="/testbench/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -49,21 +49,9 @@
       <obj_property name="ObjectShortName">led[15:0]</obj_property>
       <obj_property name="isExpanded"></obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/u_holiday_lights/state" type="array">
-      <obj_property name="ElementShortName">state[3:0]</obj_property>
-      <obj_property name="ObjectShortName">state[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/u_holiday_lights/tim" type="array">
-      <obj_property name="ElementShortName">tim[31:0]</obj_property>
-      <obj_property name="ObjectShortName">tim[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/u_holiday_lights/cnt" type="array">
-      <obj_property name="ElementShortName">cnt[4:0]</obj_property>
-      <obj_property name="ObjectShortName">cnt[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/u_holiday_lights/i" type="array">
-      <obj_property name="ElementShortName">i[31:0]</obj_property>
-      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   <wvobject fp_name="/testbench/u_holiday_lights/button" type="logic">
+      <obj_property name="ElementShortName">button</obj_property>
+      <obj_property name="ObjectShortName">button</obj_property>
    </wvobject>
    <wvobject fp_name="/testbench/u_holiday_lights/button" type="logic">
       <obj_property name="ElementShortName">button</obj_property>
@@ -72,5 +60,21 @@
    <wvobject fp_name="/testbench/u_holiday_lights/switch" type="array">
       <obj_property name="ElementShortName">switch[2:0]</obj_property>
       <obj_property name="ObjectShortName">switch[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_holiday_lights/u0/flowLights/ledReg" type="array">
+      <obj_property name="ElementShortName">ledReg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ledReg[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_holiday_lights/u0/flowLights/clkReg" type="array">
+      <obj_property name="ElementShortName">clkReg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">clkReg[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_holiday_lights/u0/flowLights/io_ledCount" type="array">
+      <obj_property name="ElementShortName">io_ledCount[2:0]</obj_property>
+      <obj_property name="ObjectShortName">io_ledCount[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_holiday_lights/u0/flowLights/ledReg_newUInt" type="array">
+      <obj_property name="ElementShortName">ledReg_newUInt[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ledReg_newUInt[15:0]</obj_property>
    </wvobject>
 </wave_config>
