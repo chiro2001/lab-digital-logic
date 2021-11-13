@@ -12,13 +12,11 @@ module holiday_lights (input wire clk,
     parameter STATE_RUN  = 2;
     reg [3:0] state;
     reg [31:0] tim;
-    reg [4:0] cnt;
     integer i;
     
     always @ (posedge clk or posedge rst) begin
         if (rst) begin
             led   <= 16'b0;
-            cnt   <= 5'b0;
             tim   <= 32'b0;
             i     <= 0;
             // 初始化当前状态机为开始之前
@@ -41,15 +39,11 @@ module holiday_lights (input wire clk,
                 if (button)
                     state <= STATE_INIT;
                 else begin
-                    // 计数器溢出，更新cnt
+                    // 计数器溢出，更新
                     if (tim == delay) begin
                         tim <= 32'b0;
                         // 进行一个位的移
                         led <= {led[14-:15], led[15]};
-                        cnt <= cnt + 5'b1;
-                        // cnt 溢出，回到初始状态
-                        if (cnt == 5'd16)
-                            cnt <= 5'b0;
                     end else
                         // 计数
                         tim <= tim + 32'b1;

@@ -1,0 +1,18 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto fad061bcf39c455fad586b04a5ae1fd7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/Programs/lab-digital-logic/lab02/lab_holiday_lights_chisel/lab.srcs/sources_1/imports/holiday_lights/holiday_lights.v" Line 184. Module holiday_lights doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Programs/lab-digital-logic/lab02/lab_holiday_lights_chisel/lab.srcs/sources_1/imports/holiday_lights/holiday_lights.v" Line 157. Module FlowLightsWrapper doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Programs/lab-digital-logic/lab02/lab_holiday_lights_chisel/lab.srcs/sources_1/imports/holiday_lights/holiday_lights.v" Line 3. Module FlowLights doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FlowLights
+Compiling module xil_defaultlib.FlowLightsWrapper
+Compiling module xil_defaultlib.holiday_lights
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav

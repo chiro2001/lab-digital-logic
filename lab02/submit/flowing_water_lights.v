@@ -11,15 +11,11 @@ module flowing_water_lights (input wire clk,
     parameter STATE_RUN  = 2;
     reg [3:0] state;
     reg [31:0] tim;
-    reg [4:0] cnt;
-    integer i;
     
     always @ (posedge clk or posedge rst) begin
         if (rst) begin
             led   <= 8'b0;
-            cnt   <= 5'b0;
             tim   <= 32'b0;
-            i     <= 0;
             // 初始化当前状态机为开始之前
             state <= STATE_PRE;
         end
@@ -31,8 +27,7 @@ module flowing_water_lights (input wire clk,
             end
             else if (state == STATE_INIT) begin
                 // 初始化状态，设置相关信息之后进入运行状态
-                for (i = 0; i < 8; i = i + 1)
-                    led[i] = (i == 0) ? 1'b1 : 1'b0;
+                led <= 8'b0000_0001;
                 state <= STATE_RUN;
             end
             else if (state == STATE_RUN) begin
@@ -40,15 +35,11 @@ module flowing_water_lights (input wire clk,
                 if (button)
                     state <= STATE_INIT;
                 else begin
-                    // 计数器溢出，更新cnt
+                    // 计数器溢出，更新
                     if (tim == delay) begin
                         tim <= 32'b0;
                         // 进行一个位的移
                         led <= {led[6-:7], led[7]};
-                        cnt <= cnt + 5'b1;
-                        // cnt 溢出，回到初始状态
-                        if (cnt == 5'd8)
-                            cnt <= 5'b0;
                     end else
                         // 计数
                         tim <= tim + 32'b1;
