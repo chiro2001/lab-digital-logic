@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../lab.srcs/sources_1/ip/clk_div" \
+"../../../../lab.srcs/sources_1/ip/clk_div/clk_div_clk_wiz.v" \
+"../../../../lab.srcs/sources_1/ip/clk_div/clk_div.v" \
+"../../../../lab.srcs/sources_1/ip/led_mem/sim/led_mem.v" \
+"../../../../lab.srcs/sources_1/imports/实验3 利用IP设计电路/memory_top.v" \
+"../../../../lab.srcs/sources_1/new/memory_w_r.v" \
+"../../../../lab.srcs/sim_1/imports/实验3 利用IP设计电路/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
