@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed Nov 10 15:44:04 2021
+| Date         : Wed Nov 17 14:07:48 2021
 | Host         : Chiro running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file flowing_water_lights_control_sets_placed.rpt
 | Design       : flowing_water_lights
@@ -49,7 +49,7 @@ Table of Contents
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              50 |           16 |
+| Yes          | No                    | Yes                    |              50 |           17 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -61,8 +61,8 @@ Table of Contents
 |  Clock Signal  |          Enable Signal          | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +----------------+---------------------------------+------------------+------------------+----------------+
 |  clk_IBUF_BUFG | FSM_sequential_state[1]_i_1_n_0 | rst_IBUF         |                1 |              2 |
-|  clk_IBUF_BUFG | led[7]_i_1_n_0                  | rst_IBUF         |                5 |             16 |
-|  clk_IBUF_BUFG | tim[31]_i_1_n_0                 | rst_IBUF         |               10 |             32 |
+|  clk_IBUF_BUFG | led[7]_i_1_n_0                  | rst_IBUF         |                4 |             16 |
+|  clk_IBUF_BUFG | tim[31]_i_1_n_0                 | rst_IBUF         |               12 |             32 |
 +----------------+---------------------------------+------------------+------------------+----------------+
 
 

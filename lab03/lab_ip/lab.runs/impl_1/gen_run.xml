@@ -1,61 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1636528618">
-  <File Type="ROUTE-PWR" Name="holiday_lights_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="holiday_lights.tcl"/>
-  <File Type="BITSTR-BMM" Name="holiday_lights_bd.bmm"/>
-  <File Type="ROUTE-PWR-SUM" Name="holiday_lights_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="holiday_lights_reports.tcl"/>
-  <File Type="OPT-DCP" Name="holiday_lights_opt.dcp"/>
-  <File Type="OPT-DRC" Name="holiday_lights_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="holiday_lights.hwdef"/>
-  <File Type="PWROPT-DCP" Name="holiday_lights_pwropt.dcp"/>
-  <File Type="PLACE-DCP" Name="holiday_lights_placed.dcp"/>
-  <File Type="PLACE-IO" Name="holiday_lights_io_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="holiday_lights_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="holiday_lights_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="holiday_lights_control_sets_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="holiday_lights_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="holiday_lights.bgn"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="holiday_lights_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="holiday_lights.bin"/>
-  <File Type="PHYSOPT-DCP" Name="holiday_lights_physopt.dcp"/>
-  <File Type="BITSTR-MSK" Name="holiday_lights.msk"/>
-  <File Type="ROUTE-ERROR-DCP" Name="holiday_lights_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="holiday_lights_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="holiday_lights_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="holiday_lights_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="holiday_lights_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="holiday_lights_drc_routed.rpx"/>
-  <File Type="BITSTR-LTX" Name="holiday_lights.ltx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="holiday_lights_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-MMI" Name="holiday_lights.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="holiday_lights_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="holiday_lights_methodology_drc_routed.pb"/>
-  <File Type="BITSTR-SYSDEF" Name="holiday_lights.sysdef"/>
-  <File Type="ROUTE-PWR-RPX" Name="holiday_lights_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="holiday_lights_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="holiday_lights_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="holiday_lights_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="holiday_lights_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="holiday_lights_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-CLK" Name="holiday_lights_clock_utilization_routed.rpt"/>
-  <File Type="RDI-RDI" Name="holiday_lights.vdi"/>
-  <File Type="ROUTE-BUS-SKEW" Name="holiday_lights_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="holiday_lights_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="holiday_lights_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="holiday_lights_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="holiday_lights_postroute_physopt_bb.dcp"/>
-  <File Type="BG-BIT" Name="holiday_lights.bit"/>
-  <File Type="BITSTR-RBT" Name="holiday_lights.rbt"/>
-  <File Type="BITSTR-NKY" Name="holiday_lights.nky"/>
-  <File Type="BG-DRC" Name="holiday_lights.drc"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1637133539">
+  <File Type="BITSTR-BMM" Name="memory_top_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="memory_top_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="memory_top_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="memory_top_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="memory_top.tcl"/>
+  <File Type="OPT-TIMING" Name="memory_top_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="memory_top_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="memory_top_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="memory_top_reports.tcl"/>
+  <File Type="OPT-DRC" Name="memory_top_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="memory_top.hwdef"/>
+  <File Type="PWROPT-DCP" Name="memory_top_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="memory_top_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="memory_top_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="memory_top_placed.dcp"/>
+  <File Type="PLACE-IO" Name="memory_top_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="memory_top_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="memory_top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="memory_top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="memory_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="memory_top_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="memory_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="memory_top.bgn"/>
+  <File Type="PLACE-TIMING" Name="memory_top_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="memory_top_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="memory_top.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="memory_top_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="memory_top_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="memory_top_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="memory_top.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="memory_top_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="memory_top_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="memory_top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="memory_top_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="memory_top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="memory_top_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="memory_top.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="memory_top_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="memory_top.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="memory_top_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="memory_top_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="memory_top.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="memory_top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="memory_top_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="memory_top_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="memory_top_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="memory_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="memory_top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="memory_top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="memory_top_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="memory_top_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="memory_top_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="memory_top_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="memory_top_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="memory_top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="memory_top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="memory_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="memory_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="memory_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="memory_top_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="memory_top_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="memory_top.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="memory_top_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="memory_top.rbt"/>
+  <File Type="BITSTR-NKY" Name="memory_top.nky"/>
+  <File Type="BG-DRC" Name="memory_top.drc"/>
+  <File Type="RDI-RDI" Name="memory_top.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/imports/holiday_lights/holiday_lights.v">
+    <File Path="$PSRCDIR/sources_1/imports/实验3 利用IP设计电路/memory_top.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../lab02/holiday_lights/holiday_lights.v"/>
-        <Attr Name="ImportTime" Val="1636094452"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../实验3 利用IP设计电路/memory_top.v"/>
+        <Attr Name="ImportTime" Val="1636700416"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/memory_w_r.v">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -63,7 +89,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="holiday_lights"/>
+      <Option Name="TopModule" Val="memory_top"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -97,4 +123,6 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_div"/>
+  <BlockFileSet Type="BlockSrcs" Name="led_mem"/>
 </GenRun>

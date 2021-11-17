@@ -38,13 +38,15 @@ module memory_w_r(
   parameter STATE_NOT_WORK_2 = 3;
   parameter STATE_WRITE = 4;
   parameter STATE_READ = 5;
+  parameter STATE_DONE = 6;
   parameter delay = 32'd15;
+  // parameter delay = 32'd20000000;
   integer state;
   reg [31:0] tim;
   reg [3:0] cnt;
 
   reg read_done;
-  assign led = state == STATE_READ && read_done ? mem_douta : 32'b0;
+  assign led = (state == STATE_READ && read_done) ? mem_douta : (state == STATE_DONE ? 16'hFFFF : 16'd0);
 
   reg [15:0] data [15:0];
 
@@ -133,7 +135,7 @@ module memory_w_r(
               addra <= cnt;
               if (cnt == 4'd15) begin
                 mem_nop <= 1'b0;
-                state <= STATE_RESET;
+                state <= STATE_DONE;
                 ena <= 1'b0;
                 wea <= 1'b0;
                 addra <= 4'b0;
@@ -148,6 +150,9 @@ module memory_w_r(
               tim <= tim - 32'b1;
             end
           end
+        end
+        else if (state == STATE_DONE) begin
+          if (button) state <= STATE_RESET;
         end
       end
     end

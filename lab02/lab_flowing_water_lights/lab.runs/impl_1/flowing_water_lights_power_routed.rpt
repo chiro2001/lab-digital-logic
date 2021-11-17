@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Wed Nov 10 15:45:40 2021
+| Date             : Wed Nov 17 14:08:59 2021
 | Host             : Chiro running 64-bit major release  (build 9200)
 | Command          : report_power -file flowing_water_lights_power_routed.rpt -pb flowing_water_lights_power_summary_routed.pb -rpx flowing_water_lights_power_routed.rpx
 | Design           : flowing_water_lights
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.401        |
+| Total On-Chip Power (W)  | 4.552        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.304        |
-| Device Static (W)        | 0.098        |
+| Dynamic (W)              | 4.444        |
+| Device Static (W)        | 0.108        |
 | Effective TJA (C/W)      | 2.7          |
-| Max Ambient (C)          | 83.9         |
-| Junction Temperature (C) | 26.1         |
+| Max Ambient (C)          | 72.8         |
+| Junction Temperature (C) | 37.2         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.142 |      115 |       --- |             --- |
-|   LUT as Logic |     0.117 |       52 |     63400 |            0.08 |
+| Slice Logic    |     0.176 |      113 |       --- |             --- |
+|   LUT as Logic |     0.147 |       48 |     63400 |            0.08 |
 |   CARRY4       |     0.017 |        8 |     15850 |            0.05 |
+|   Register     |     0.006 |       50 |    126800 |            0.04 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
-|   Register     |     0.003 |       50 |    126800 |            0.04 |
 |   Others       |     0.000 |        1 |       --- |             --- |
-| Signals        |     0.154 |      115 |       --- |             --- |
-| I/O            |     0.008 |       11 |       285 |            3.86 |
-| Static Power   |     0.098 |          |           |                 |
-| Total          |     0.401 |          |           |                 |
+| Signals        |     0.195 |      112 |       --- |             --- |
+| I/O            |     4.073 |       11 |       285 |            3.86 |
+| Static Power   |     0.108 |          |           |                 |
+| Total          |     4.552 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.319 |       0.304 |      0.015 |
-| Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |
-| Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |
+| Vccint    |       1.000 |     0.402 |       0.379 |      0.024 |
+| Vccaux    |       1.800 |     0.168 |       0.149 |      0.019 |
+| Vcco33    |       3.300 |     1.155 |       1.151 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -138,7 +138,7 @@ Table of Contents
 +----------------------+-----------+
 | Name                 | Power (W) |
 +----------------------+-----------+
-| flowing_water_lights |     0.304 |
+| flowing_water_lights |     4.444 |
 +----------------------+-----------+
 
 

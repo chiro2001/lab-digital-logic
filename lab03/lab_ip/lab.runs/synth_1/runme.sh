@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Programs/lab-digital-logic/lab02/lab_holiday_lights/lab.runs/synth_1'
+HD_PWD='D:/Programs/lab-digital-logic/lab03/lab_ip/lab.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log holiday_lights.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source holiday_lights.tcl
+EAStep vivado -log memory_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source memory_top.tcl

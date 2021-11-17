@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Programs/lab-digital-logic/lab02/lab_holiday_lights/lab.runs/impl_1'
+HD_PWD='D:/Programs/lab-digital-logic/lab03/lab_ip/lab.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log holiday_lights.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source holiday_lights.tcl -notrace
+EAStep vivado -log memory_top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source memory_top.tcl -notrace
 
 

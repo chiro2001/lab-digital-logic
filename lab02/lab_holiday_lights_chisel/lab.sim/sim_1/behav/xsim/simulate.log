@@ -12,8 +12,3 @@ res = 0000000000011111
 generated: 0000000111100000
 res = 0000000000111111
 generated: 0000001111100000
-index 6 finished
-====================================
-Test end!
-----PASS!!!
-$finish called at time : 1005 ns : File "D:/Programs/lab-digital-logic/lab02/lab_holiday_lights_chisel/lab.srcs/sim_1/imports/holiday_lights/testbench.v" Line 88

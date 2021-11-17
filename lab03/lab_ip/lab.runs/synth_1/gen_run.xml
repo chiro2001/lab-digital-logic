@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1636528617">
-  <File Type="PA-TCL" Name="holiday_lights.tcl"/>
-  <File Type="REPORTS-TCL" Name="holiday_lights_reports.tcl"/>
-  <File Type="RDS-RDS" Name="holiday_lights.vds"/>
-  <File Type="RDS-UTIL" Name="holiday_lights_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="holiday_lights_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="holiday_lights.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1637133538">
+  <File Type="PA-TCL" Name="memory_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="memory_top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="memory_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="memory_top.vds"/>
+  <File Type="RDS-UTIL" Name="memory_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="memory_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="memory_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="memory_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="memory_top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/imports/holiday_lights/holiday_lights.v">
+    <File Path="$PSRCDIR/sources_1/imports/实验3 利用IP设计电路/memory_top.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../lab02/holiday_lights/holiday_lights.v"/>
-        <Attr Name="ImportTime" Val="1636094452"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../实验3 利用IP设计电路/memory_top.v"/>
+        <Attr Name="ImportTime" Val="1636700416"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/memory_w_r.v">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -19,7 +29,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="holiday_lights"/>
+      <Option Name="TopModule" Val="memory_top"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -45,4 +55,6 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_div"/>
+  <BlockFileSet Type="BlockSrcs" Name="led_mem"/>
 </GenRun>
