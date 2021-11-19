@@ -5,4 +5,4 @@ index e finished
 ====================================
 Test end!
 ----PASS!!!
-$finish called at time : 18645 ns : File "D:/Programs/lab-digital-logic/lab03/lab_ip/lab.srcs/sim_1/imports/实验3 利用IP设计电路/testbench.v" Line 111
+$finish called at time : 30895 ns : File "D:/Programs/lab-digital-logic/lab03/lab_ip/lab.srcs/sim_1/imports/实验3 利用IP设计电路/testbench.v" Line 111

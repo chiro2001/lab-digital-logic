@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="20645000001fs"></ZoomEndTime>
-      <Cursor1Time time="9745000000fs"></Cursor1Time>
+      <ZoomStartTime time="19842130999fs"></ZoomStartTime>
+      <ZoomEndTime time="38632131000fs"></ZoomEndTime>
+      <Cursor1Time time="32295000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="193"></NameColumnWidth>
-      <ValueColumnWidth column_width="101"></ValueColumnWidth>
+      <ValueColumnWidth column_width="96"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="18" />
+   <WVObjectSize size="19" />
    <wvobject fp_name="/testbench/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -91,5 +91,9 @@
    <wvobject fp_name="/testbench/u_memory_top/u_memory_w_r/mem_douta" type="array">
       <obj_property name="ElementShortName">mem_douta[15:0]</obj_property>
       <obj_property name="ObjectShortName">mem_douta[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_memory_top/u_memory_w_r/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[3:0]</obj_property>
    </wvobject>
 </wave_config>

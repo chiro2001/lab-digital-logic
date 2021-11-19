@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Mon Nov 15 23:01:47 2021
+-- Date        : Fri Nov 19 17:28:42 2021
 -- Host        : Chiro running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               d:/Programs/lab-digital-logic/lab03/lab_ip/lab.srcs/sources_1/ip/clk_div/clk_div_sim_netlist.vhdl
+--               D:/Programs/lab-digital-logic/lab03/lab_ip/lab.srcs/sources_1/ip/clk_div/clk_div_sim_netlist.vhdl
 -- Design      : clk_div
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -73,7 +73,7 @@ plle2_adv_inst: unisim.vcomponents.PLLE2_ADV
       CLKFBOUT_PHASE => 0.000000,
       CLKIN1_PERIOD => 10.000000,
       CLKIN2_PERIOD => 0.000000,
-      CLKOUT0_DIVIDE => 41,
+      CLKOUT0_DIVIDE => 82,
       CLKOUT0_DUTY_CYCLE => 0.500000,
       CLKOUT0_PHASE => 0.000000,
       CLKOUT1_DIVIDE => 1,
