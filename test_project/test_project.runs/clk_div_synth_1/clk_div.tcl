@@ -27,12 +27,12 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir D:/Programs/lab-digital-logic/test_project/test_project.cache/wt [current_project]
 set_property parent.project_path D:/Programs/lab-digital-logic/test_project/test_project.xpr [current_project]
-set_property XPM_LIBRARIES XPM_CDC [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo d:/Programs/lab-digital-logic/test_project/test_project.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_ip -quiet d:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div.xci
+read_ip -quiet D:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div.xci
 set_property used_in_implementation false [get_files -all d:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div_board.xdc]
 set_property used_in_implementation false [get_files -all d:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div.xdc]
 set_property used_in_implementation false [get_files -all d:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div_ooc.xdc]
@@ -90,32 +90,32 @@ write_checkpoint -force -noxdef clk_div.dcp
 create_report "clk_div_synth_1_synth_report_utilization_0" "report_utilization -file clk_div_utilization_synth.rpt -pb clk_div_utilization_synth.pb"
 
 if { [catch {
-  file copy -force D:/Programs/lab-digital-logic/test_project/test_project.runs/clk_div_synth_1/clk_div.dcp d:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div.dcp
+  file copy -force D:/Programs/lab-digital-logic/test_project/test_project.runs/clk_div_synth_1/clk_div.dcp D:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  write_verilog -force -mode synth_stub d:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div_stub.v
+  write_verilog -force -mode synth_stub D:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode synth_stub d:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div_stub.vhdl
+  write_vhdl -force -mode synth_stub D:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_verilog -force -mode funcsim d:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div_sim_netlist.v
+  write_verilog -force -mode funcsim D:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode funcsim d:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div_sim_netlist.vhdl
+  write_vhdl -force -mode funcsim D:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -125,32 +125,32 @@ if { [catch {
 
 
 if { [catch {
-  file copy -force D:/Programs/lab-digital-logic/test_project/test_project.runs/clk_div_synth_1/clk_div.dcp d:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div.dcp
+  file copy -force D:/Programs/lab-digital-logic/test_project/test_project.runs/clk_div_synth_1/clk_div.dcp D:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  file rename -force D:/Programs/lab-digital-logic/test_project/test_project.runs/clk_div_synth_1/clk_div_stub.v d:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div_stub.v
+  file rename -force D:/Programs/lab-digital-logic/test_project/test_project.runs/clk_div_synth_1/clk_div_stub.v D:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force D:/Programs/lab-digital-logic/test_project/test_project.runs/clk_div_synth_1/clk_div_stub.vhdl d:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div_stub.vhdl
+  file rename -force D:/Programs/lab-digital-logic/test_project/test_project.runs/clk_div_synth_1/clk_div_stub.vhdl D:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force D:/Programs/lab-digital-logic/test_project/test_project.runs/clk_div_synth_1/clk_div_sim_netlist.v d:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div_sim_netlist.v
+  file rename -force D:/Programs/lab-digital-logic/test_project/test_project.runs/clk_div_synth_1/clk_div_sim_netlist.v D:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force D:/Programs/lab-digital-logic/test_project/test_project.runs/clk_div_synth_1/clk_div_sim_netlist.vhdl d:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div_sim_netlist.vhdl
+  file rename -force D:/Programs/lab-digital-logic/test_project/test_project.runs/clk_div_synth_1/clk_div_sim_netlist.vhdl D:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -159,13 +159,13 @@ if { [catch {
 
 if {[file isdir D:/Programs/lab-digital-logic/test_project/test_project.ip_user_files/ip/clk_div]} {
   catch { 
-    file copy -force d:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div_stub.v D:/Programs/lab-digital-logic/test_project/test_project.ip_user_files/ip/clk_div
+    file copy -force D:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div_stub.v D:/Programs/lab-digital-logic/test_project/test_project.ip_user_files/ip/clk_div
   }
 }
 
 if {[file isdir D:/Programs/lab-digital-logic/test_project/test_project.ip_user_files/ip/clk_div]} {
   catch { 
-    file copy -force d:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div_stub.vhdl D:/Programs/lab-digital-logic/test_project/test_project.ip_user_files/ip/clk_div
+    file copy -force D:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div_stub.vhdl D:/Programs/lab-digital-logic/test_project/test_project.ip_user_files/ip/clk_div
   }
 }
 file delete __synthesis_is_running__

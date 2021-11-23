@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Tue Nov 16 20:07:06 2021
+// Date        : Mon Nov 22 22:14:46 2021
 // Host        : Chiro running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               d:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div_sim_netlist.v
+//               D:/Programs/lab-digital-logic/test_project/test_project.srcs/sources_1/ip/clk_div/clk_div_sim_netlist.v
 // Design      : clk_div
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -15,34 +15,28 @@
 (* NotValidForBitStream *)
 module clk_div
    (clk_out1,
-    reset,
     locked,
     clk_in1);
   output clk_out1;
-  input reset;
   output locked;
   input clk_in1;
 
   (* IBUF_LOW_PWR *) wire clk_in1;
   wire clk_out1;
   wire locked;
-  wire reset;
 
   clk_div_clk_div_clk_wiz inst
        (.clk_in1(clk_in1),
         .clk_out1(clk_out1),
-        .locked(locked),
-        .reset(reset));
+        .locked(locked));
 endmodule
 
 (* ORIG_REF_NAME = "clk_div_clk_wiz" *) 
 module clk_div_clk_div_clk_wiz
    (clk_out1,
-    reset,
     locked,
     clk_in1);
   output clk_out1;
-  input reset;
   output locked;
   input clk_in1;
 
@@ -53,7 +47,6 @@ module clk_div_clk_div_clk_wiz
   wire clkfbout_buf_clk_div;
   wire clkfbout_clk_div;
   wire locked;
-  wire reset;
   wire NLW_plle2_adv_inst_CLKOUT1_UNCONNECTED;
   wire NLW_plle2_adv_inst_CLKOUT2_UNCONNECTED;
   wire NLW_plle2_adv_inst_CLKOUT3_UNCONNECTED;
@@ -86,7 +79,7 @@ module clk_div_clk_div_clk_wiz
     .CLKFBOUT_PHASE(0.000000),
     .CLKIN1_PERIOD(10.000000),
     .CLKIN2_PERIOD(0.000000),
-    .CLKOUT0_DIVIDE(41),
+    .CLKOUT0_DIVIDE(82),
     .CLKOUT0_DUTY_CYCLE(0.500000),
     .CLKOUT0_PHASE(0.000000),
     .CLKOUT1_DIVIDE(1),
@@ -133,7 +126,7 @@ module clk_div_clk_div_clk_wiz
         .DWE(1'b0),
         .LOCKED(locked),
         .PWRDWN(1'b0),
-        .RST(reset));
+        .RST(1'b0));
 endmodule
 `ifndef GLBL
 `define GLBL
