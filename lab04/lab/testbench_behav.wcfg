@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="12948333334fs"></ZoomStartTime>
-      <ZoomEndTime time="19228333335fs"></ZoomEndTime>
-      <Cursor1Time time="13995000000fs"></Cursor1Time>
+      <ZoomStartTime time="556811666666fs"></ZoomStartTime>
+      <ZoomEndTime time="559299666667fs"></ZoomEndTime>
+      <Cursor1Time time="558885000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="193"></NameColumnWidth>
-      <ValueColumnWidth column_width="96"></ValueColumnWidth>
+      <ValueColumnWidth column_width="91"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="28" />
+   <WVObjectSize size="27" />
    <wvobject fp_name="/testbench/u_led_display_ctrl/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -51,10 +51,6 @@
    <wvobject fp_name="/testbench/u_led_display_ctrl/count_down" type="array">
       <obj_property name="ElementShortName">count_down[3:0]</obj_property>
       <obj_property name="ObjectShortName">count_down[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/u_led_display_ctrl/delay" type="array">
-      <obj_property name="ElementShortName">delay[31:0]</obj_property>
-      <obj_property name="ObjectShortName">delay[31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/testbench/u_led_display_ctrl/count_max" type="array">
       <obj_property name="ElementShortName">count_max[3:0]</obj_property>
@@ -123,6 +119,7 @@
    <wvobject fp_name="/testbench/led_cx" type="array">
       <obj_property name="ElementShortName">led_cx[6:0]</obj_property>
       <obj_property name="ObjectShortName">led_cx[6:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject fp_name="/testbench/u_led_display_ctrl/led_display_u/val" type="array">
       <obj_property name="ElementShortName">val[7:0]</obj_property>

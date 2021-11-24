@@ -7,7 +7,6 @@ module led_display #(
 	output	wire [7:0] led_en,
 	output	wire [7:0] led_cx
 );
-	// parameter delay = 5;
 	reg [31:0] tim;
 	reg [3:0] cnt;
 
@@ -21,6 +20,12 @@ module led_display #(
 	assign val_map = map[val];
 
 	assign led_cx = ~map[val];
+
+	always @ (values) begin
+		// 更新values的时候重新初始化
+		tim = 32'b0;
+		cnt = 32'b0;
+	end
 
 	always @ (posedge clk or posedge rst) begin
 		if (rst) begin
@@ -80,7 +85,13 @@ module led_display_ctrl (
 	output wire       led_cg,
 	output wire       led_dp 
 );
-	parameter delay = 5;
+	// 显示一个数码管位的分频数
+	parameter delay_flash = 50000;
+	// parameter delay_flash = 5;
+	// 倒计时数据更新的分频数
+	parameter delay_update = 100000000;
+	// parameter delay_update = 10000;
+	// parameter delay_update = 100;
 	parameter count_max = 4'd10;
 	reg [31:0] tim;
 
@@ -89,46 +100,43 @@ module led_display_ctrl (
 	parameter STATE_RESET_STOP = 1;
 	parameter STATE_RUNNING = 2;
 
+	// 需要显示的数据（初始化的值）
+	// 我用的是8bit/数码管，所以中间添加0
+	parameter disp_data = 64'h0100_0200_0006_0109;
+
 	reg [63:0] values;
 	reg [3:0] count_down;
 
+	reg started;
+
 	wire [7:0] led_cx;
-	// assign {led_ca, led_cb, led_cc, led_cd, led_ce, led_cf, led_cg, led_dp} = led_cx;
+	// 把需要输出的信号都绑定到 led_cx，方便对应到 values
 	assign {led_dp, led_cg, led_cf, led_ce, led_cd, led_cc, led_cb, led_ca} = led_cx;
 	led_display led_display_u (
 		.clk(clk),
 		.rst(rst),
-		.values(values),
+		// 按键的时候全灭
+		.values(button ? 64'h0000_0000_0000_0000 : values),
 		.led_en(led_en),
 		.led_cx(led_cx)
 	);
 
-	defparam led_display_u.delay = delay;
+	defparam led_display_u.delay = delay_flash;
 
 	always @ (posedge clk or posedge rst) begin
 		if (rst) begin
 			state <= STATE_RESET;
+			started <= 1'b0;
 		end
 		else begin
 			if (state == STATE_RESET) begin
-				// 显示学号后两位
-				values[(0<<3)+:8] <= 8'h9;
-				values[(1<<3)+:8] <= 8'h1;
-				// 显示班级
-				values[(2<<3)+:8] <= 8'h0;
-				values[(3<<3)+:8] <= 8'h6;
-				// 显示年级
-				values[(4<<3)+:8] <= 8'h2;
-				values[(5<<3)+:8] <= 8'h0;
+				values <= disp_data;
 				// 初始化显示倒计时
 				count_down <= count_max;
-				values[(6<<3)+:8] <= {4'b0, count_down > (count_max - 1) ? 4'h1 : 4'h0};
-				values[(7<<3)+:8] <= {4'b0, count_down};
-
 				tim <= 32'b0;
-
-				if (button) begin
+				if (button || started) begin
 					state <= STATE_RESET_STOP;
+					started <= 1'b1;
 				end
 			end
 			else if (state == STATE_RESET_STOP) begin
@@ -140,14 +148,16 @@ module led_display_ctrl (
 				if (button) begin
 					state <= STATE_RESET;
 				end
-				if (tim == delay << 3) begin
+				if (tim == delay_update) begin
 					tim <= 32'b0;
 					if (count_down == 4'b0) begin
 						count_down <= count_max;
 					end
 					else begin
+						// 更新values即更新显示的值
+						// 这里只支持到10
 						values[(6<<3)+:8] <= {4'b0, count_down > (count_max - 1) ? 4'h1 : 4'h0};
-						values[(7<<3)+:8] <= {4'b0, count_down};
+						values[(7<<3)+:8] <= {4'b0, count_down > (count_max - 1) ? (count_down - 4'd10) : count_down};
 						count_down <= count_down - 4'b1;
 					end
 				end
