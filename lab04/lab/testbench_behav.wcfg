@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="556811666666fs"></ZoomStartTime>
-      <ZoomEndTime time="559299666667fs"></ZoomEndTime>
-      <Cursor1Time time="558885000000fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="501200961fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="193"></NameColumnWidth>
-      <ValueColumnWidth column_width="91"></ValueColumnWidth>
+      <ValueColumnWidth column_width="86"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="27" />
+   <WVObjectSize size="33" />
    <wvobject fp_name="/testbench/u_led_display_ctrl/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -31,6 +31,10 @@
    <wvobject fp_name="/testbench/u_led_display_ctrl/button" type="logic">
       <obj_property name="ElementShortName">button</obj_property>
       <obj_property name="ObjectShortName">button</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/dismiss" type="logic">
+      <obj_property name="ElementShortName">dismiss</obj_property>
+      <obj_property name="ObjectShortName">dismiss</obj_property>
    </wvobject>
    <wvobject fp_name="/testbench/u_led_display_ctrl/led_en" type="array">
       <obj_property name="ElementShortName">led_en[7:0]</obj_property>
@@ -97,8 +101,8 @@
       <obj_property name="ObjectShortName">map[15:0][7:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/testbench/u_led_display_ctrl/led_display_u/cnt" type="array">
-      <obj_property name="ElementShortName">cnt[3:0]</obj_property>
-      <obj_property name="ObjectShortName">cnt[3:0]</obj_property>
+      <obj_property name="ElementShortName">cnt[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[7:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/testbench/u_led_display_ctrl/led_display_u/delay" type="array">
       <obj_property name="ElementShortName">delay[31:0]</obj_property>
@@ -128,5 +132,25 @@
    <wvobject fp_name="/testbench/u_led_display_ctrl/led_display_u/val_map" type="array">
       <obj_property name="ElementShortName">val_map[7:0]</obj_property>
       <obj_property name="ObjectShortName">val_map[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/started" type="logic">
+      <obj_property name="ElementShortName">started</obj_property>
+      <obj_property name="ObjectShortName">started</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/led_en_use" type="array">
+      <obj_property name="ElementShortName">led_en_use[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led_en_use[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/led_en" type="array">
+      <obj_property name="ElementShortName">led_en[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led_en[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/led_en" type="array">
+      <obj_property name="ElementShortName">led_en[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led_en[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/dismiss" type="logic">
+      <obj_property name="ElementShortName">dismiss</obj_property>
+      <obj_property name="ObjectShortName">dismiss</obj_property>
    </wvobject>
 </wave_config>

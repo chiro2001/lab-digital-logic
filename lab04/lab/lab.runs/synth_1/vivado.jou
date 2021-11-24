@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Nov 24 15:29:36 2021
-# Process ID: 22648
+# Start of session at: Wed Nov 24 17:21:06 2021
+# Process ID: 8072
 # Current directory: D:/Programs/lab-digital-logic/lab04/lab/lab.runs/synth_1
 # Command line: vivado.exe -log led_display_ctrl.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source led_display_ctrl.tcl
 # Log file: D:/Programs/lab-digital-logic/lab04/lab/lab.runs/synth_1/led_display_ctrl.vds

@@ -8,30 +8,24 @@ module led_display #(
 	output	wire [7:0] led_cx
 );
 	reg [31:0] tim;
-	reg [3:0] cnt;
+	reg [7:0] cnt;
 
 	reg [7:0] map [15:0];
 
 	wire [7:0] val;
 	wire [7:0] val_map;
 
-	assign led_en = ~(1 << cnt);
+	assign led_en = rst ? 8'b0 : ~(1 << cnt);
+	//								(cnt*8):(cnt*8+8)
 	assign val = values[(cnt<<3)+:8];
 	assign val_map = map[val];
 
 	assign led_cx = ~map[val];
 
-	always @ (values) begin
-		// 更新values的时候重新初始化
-		tim = 32'b0;
-		cnt = 32'b0;
-	end
-
 	always @ (posedge clk or posedge rst) begin
 		if (rst) begin
-			cnt <= 4'b0;
+			cnt <= 8'b0;
 			tim <= 32'b0;
-
 			//					   pgfedcba
 			map[8'h0] = 8'b00111111;
 			map[8'h1] = 8'b00000110;
@@ -56,11 +50,11 @@ module led_display #(
 		else begin
 			if (tim == delay) begin
 				tim <= 32'b0;
-				if (cnt == 4'd7) begin
-					cnt <= 4'b0;
+				if (cnt == 8'd7) begin
+					cnt <= 8'b0;
 				end
 				else begin
-					cnt <= cnt + 4'b1;
+					cnt <= cnt + 8'b1;
 				end
 			end
 			else begin
@@ -110,14 +104,19 @@ module led_display_ctrl (
 	reg started;
 
 	wire [7:0] led_cx;
+	wire [7:0] led_en_use;
+	wire dismiss;
+	assign dismiss = (rst || (~started) || button);
+	assign led_en = dismiss ? (~8'd0) : led_en_use;
 	// 把需要输出的信号都绑定到 led_cx，方便对应到 values
-	assign {led_dp, led_cg, led_cf, led_ce, led_cd, led_cc, led_cb, led_ca} = led_cx;
+	assign {led_dp, led_cg, led_cf, led_ce, led_cd, led_cc, led_cb, led_ca} = dismiss ? (~8'd0) : led_cx;
 	led_display led_display_u (
 		.clk(clk),
 		.rst(rst),
 		// 按键的时候全灭
-		.values(button ? 64'h0000_0000_0000_0000 : values),
-		.led_en(led_en),
+		.values(dismiss ? (~64'h0) : values),
+		// .led_en(led_en),
+		.led_en(led_en_use),
 		.led_cx(led_cx)
 	);
 
@@ -154,15 +153,15 @@ module led_display_ctrl (
 						count_down <= count_max;
 					end
 					else begin
-						// 更新values即更新显示的值
-						// 这里只支持到10
-						values[(6<<3)+:8] <= {4'b0, count_down > (count_max - 1) ? 4'h1 : 4'h0};
-						values[(7<<3)+:8] <= {4'b0, count_down > (count_max - 1) ? (count_down - 4'd10) : count_down};
 						count_down <= count_down - 4'b1;
 					end
 				end
 				else begin
 					tim <= tim + 32'b1;
+					// 更新values即更新显示的值
+					// 这里只支持到10
+					values[(7<<3)+:8] <= {4'b0, count_down > (count_max - 1) ? 4'h1 : 4'h0};
+					values[(6<<3)+:8] <= {4'b0, count_down > (count_max - 1) ? (count_down - 4'd10) : count_down};
 				end
 			end
 		end
