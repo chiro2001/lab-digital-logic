@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="43333333fs"></ZoomStartTime>
+      <ZoomEndTime time="1191333334fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="193"></NameColumnWidth>
+      <ValueColumnWidth column_width="81"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="31" />
+   <wvobject fp_name="/testbench/u_led_display_ctrl/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/button" type="logic">
+      <obj_property name="ElementShortName">button</obj_property>
+      <obj_property name="ObjectShortName">button</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/led_en" type="array">
+      <obj_property name="ElementShortName">led_en[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led_en[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/led_ca" type="logic">
+      <obj_property name="ElementShortName">led_ca</obj_property>
+      <obj_property name="ObjectShortName">led_ca</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/led_cb" type="logic">
+      <obj_property name="ElementShortName">led_cb</obj_property>
+      <obj_property name="ObjectShortName">led_cb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/led_cc" type="logic">
+      <obj_property name="ElementShortName">led_cc</obj_property>
+      <obj_property name="ObjectShortName">led_cc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/led_cd" type="logic">
+      <obj_property name="ElementShortName">led_cd</obj_property>
+      <obj_property name="ObjectShortName">led_cd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/led_ce" type="logic">
+      <obj_property name="ElementShortName">led_ce</obj_property>
+      <obj_property name="ObjectShortName">led_ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/led_cf" type="logic">
+      <obj_property name="ElementShortName">led_cf</obj_property>
+      <obj_property name="ObjectShortName">led_cf</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/led_cg" type="logic">
+      <obj_property name="ElementShortName">led_cg</obj_property>
+      <obj_property name="ObjectShortName">led_cg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/led_dp" type="logic">
+      <obj_property name="ElementShortName">led_dp</obj_property>
+      <obj_property name="ObjectShortName">led_dp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/values" type="array">
+      <obj_property name="ElementShortName">values[63:0]</obj_property>
+      <obj_property name="ObjectShortName">values[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/tim" type="array">
+      <obj_property name="ElementShortName">tim[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tim[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/flag" type="logic">
+      <obj_property name="ElementShortName">flag</obj_property>
+      <obj_property name="ObjectShortName">flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/count" type="array">
+      <obj_property name="ElementShortName">count[7:0]</obj_property>
+      <obj_property name="ObjectShortName">count[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/led_cx" type="array">
+      <obj_property name="ElementShortName">led_cx[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led_cx[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/initial_lights" type="array">
+      <obj_property name="ElementShortName">initial_lights[63:0]</obj_property>
+      <obj_property name="ObjectShortName">initial_lights[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/flash" type="array">
+      <obj_property name="ElementShortName">flash[31:0]</obj_property>
+      <obj_property name="ObjectShortName">flash[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/clk_1s" type="array">
+      <obj_property name="ElementShortName">clk_1s[31:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_1s[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/display/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/display/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/display/delay" type="array">
+      <obj_property name="ElementShortName">delay[31:0]</obj_property>
+      <obj_property name="ObjectShortName">delay[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/display/values" type="array">
+      <obj_property name="ElementShortName">values[63:0]</obj_property>
+      <obj_property name="ObjectShortName">values[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/display/led_en" type="array">
+      <obj_property name="ElementShortName">led_en[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led_en[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/display/led_cx" type="array">
+      <obj_property name="ElementShortName">led_cx[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led_cx[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/display/tim" type="array">
+      <obj_property name="ElementShortName">tim[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tim[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/display/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/display/num" type="array">
+      <obj_property name="ElementShortName">num[9:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">num[9:0][7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/display/data" type="array">
+      <obj_property name="ElementShortName">data[7:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_led_display_ctrl/display/value" type="array">
+      <obj_property name="ElementShortName">value[7:0]</obj_property>
+      <obj_property name="ObjectShortName">value[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

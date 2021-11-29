@@ -1,0 +1,174 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Nov 26 17:40:03 2021
+# Process ID: 12208
+# Current directory: C:/Users/Administrator/Desktop/led_display_ctrl
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7304 C:\Users\Administrator\Desktop\led_display_ctrl\led_display_ctrl.xpr
+# Log file: C:/Users/Administrator/Desktop/led_display_ctrl/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/led_display_ctrl\vivado.jou
+#-----------------------------------------------------------sstart_guioopen_project C:/Users/Administrator/Desktop/led_display_ctrl/led_display_ctrl.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.uupdate_compile_order -fileset sources_1exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 26 17:48:47 2021...
+..
+Run output will be captured here: C:/Users/Administrator/Desktop/led_display_ctrl/led_display_ctrl.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Fri Nov 26 17:45:34 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/led_display_ctrl/led_display_ctrl.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Fri Nov 26 17:47:24 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/led_display_ctrl/led_display_ctrl.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Fri Nov 26 17:47:53 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/led_display_ctrl/led_display_ctrl.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Nov 26 17:48:50 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/led_display_ctrl/led_display_ctrl.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn1" may be locked by another hw_server.
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:jsn1:3121
+ERROR: [Labtools 27-2223] Unable to connect to hw_server with URL "TCP:jsn1:3121".
+Resolution: 1. Check the host name, port number and network connectivity.
+2. Check to ensure the hw_server is running on the target.
+ERROR: [Common 17-39] 'connect_hw_server' failed due to earlier errors.
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/Port_#0006.Hub_#0001
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/led_display_ctrl/led_display_ctrl.runs/impl_1/led_display_ctrl.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/led_display_ctrl/led_display_ctrl.runs/impl_1/led_display_ctrl.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+ERROR: [Labtools 27-3165] End of startup status: LOW
+program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1752.441 ; gain = 0.000
+ERROR: [Common 17-39] 'program_hw_devices' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/Port_#0006.Hub_#0001
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-DLC9-Port_#0006.Hub_#0001" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-DLC9-Port_#0006.Hub_#0001" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-DLC9-Port_#0006.Hub_#0001" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-DLC9-Port_#0006.Hub_#0001" may be locked by another hw_server.
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:jsn1:3121
+ERROR: [Labtools 27-2223] Unable to connect to hw_server with URL "TCP:jsn1:3121".
+Resolution: 1. Check the host name, port number and network connectivity.
+2. Check to ensure the hw_server is running on the target.
+ERROR: [Common 17-39] 'connect_hw_server' failed due to earlier errors.
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn2" may be locked by another hw_server.
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:jsn2:3121
+ERROR: [Labtools 27-2223] Unable to connect to hw_server with URL "TCP:jsn2:3121".
+Resolution: 1. Check the host name, port number and network connectivity.
+2. Check to ensure the hw_server is running on the target.
+ERROR: [Common 17-39] 'connect_hw_server' failed due to earlier errors.
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn3" may be locked by another hw_server.
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:jsn1:3121
+ERROR: [Labtools 27-2223] Unable to connect to hw_server with URL "TCP:jsn1:3121".
+Resolution: 1. Check the host name, port number and network connectivity.
+2. Check to ensure the hw_server is running on the target.
+ERROR: [Common 17-39] 'connect_hw_server' failed due to earlier errors.
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/Port_#0001.Hub_#0001
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/led_display_ctrl/led_display_ctrl.runs/impl_1/led_display_ctrl.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/led_display_ctrl/led_display_ctrl.runs/impl_1/led_display_ctrl.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1789.406 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Nov 26 18:01:34 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/led_display_ctrl/led_display_ctrl.runs/synth_1/runme.log
+[Fri Nov 26 18:01:34 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/led_display_ctrl/led_display_ctrl.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/led_display_ctrl/led_display_ctrl.runs/impl_1/led_display_ctrl.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1796.328 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Nov 26 18:09:02 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/led_display_ctrl/led_display_ctrl.runs/synth_1/runme.log
+[Fri Nov 26 18:09:02 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/led_display_ctrl/led_display_ctrl.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/led_display_ctrl/led_display_ctrl.runs/impl_1/led_display_ctrl.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1796.328 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 26 18:19:45 2021...
