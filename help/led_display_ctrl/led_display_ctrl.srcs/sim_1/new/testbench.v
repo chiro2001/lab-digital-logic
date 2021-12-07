@@ -48,7 +48,7 @@ always @ (posedge clk or negedge rst_n) begin
 	else if (cnt_period) cnt <= cnt + 32'h1;
 end
 
-wire button_pos = (cnt == 32'h1);
+wire button_pos = (cnt >= 32'h10) && (cnt <= 32'hff);
 
 wire [7:0] led_en_result = led_en[0] + led_en[1] + led_en[2] + led_en[3] + led_en[4] + led_en[5] + led_en[6] + led_en[7];
 

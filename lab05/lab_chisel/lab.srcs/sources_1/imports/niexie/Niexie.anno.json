@@ -1,0 +1,17 @@
+[
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~Niexie|Niexie>io_out_ledCx",
+    "sources":[
+      "~Niexie|Niexie>io_in_button"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"/mnt/d/Programs/lab-digital-logic/lab04/lab_chisel/lab.srcs/sources_1/imports/niexie"
+  }
+]
