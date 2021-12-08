@@ -17,6 +17,7 @@ module sequence_detection (input wire clk,
     reg [5:0] state_next;
     reg [3:0] p;
     reg stopped;
+    reg started;
     
     wire val_current;
     wire val_target;
@@ -63,12 +64,14 @@ module sequence_detection (input wire clk,
             p       <= 4'b0;
             led     <= 1'b0;
             stopped <= 1'b0;
+            if (rst) started <= 1'b0;
+            else     started <= 1'b1;
         end
         else begin
-            if (switch_end)    p       <= 4'b0;
-            else if (!stopped) p       <= p + 4'b1;
-            if (found)         led     <= 1'b1;
-            if (switch_end)    stopped <= 1'b1;
+            if (switch_end)               p       <= 4'b0;
+            else if (!stopped && started) p       <= p + 4'b1;
+            if (found)                    led     <= 1'b1;
+            if (switch_end)               stopped <= 1'b1;
         end
     end
 endmodule
