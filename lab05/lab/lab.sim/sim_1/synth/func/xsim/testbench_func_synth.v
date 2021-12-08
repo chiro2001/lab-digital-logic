@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Wed Dec  8 17:42:21 2021
+// Date        : Wed Dec  8 17:55:35 2021
 // Host        : Chiro running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode funcsim -nolib -force -file
 //               D:/Programs/lab-digital-logic/lab05/lab/lab.sim/sim_1/synth/func/xsim/testbench_func_synth.v

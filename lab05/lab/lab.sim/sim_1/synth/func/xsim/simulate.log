@@ -1,0 +1,10 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+wrong at index 0
+=====================================
+Test end!
+----FAIL!!!
+test sequence : 00100101
+reference     : 1
+test module   : 0
+$finish called at time : 185 ns : File "D:/Programs/lab-digital-logic/lab05/lab/lab.srcs/sim_1/imports/lab05/testbench.v" Line 100
