@@ -9,42 +9,15 @@ module sequence_detection (input wire clk,
     parameter S3 = 8'd3;
     parameter S4 = 8'd4;
     parameter SD = 8'd5;    // IDLE状态
-    wire [5:0] TARGET;
-    // 最高位 IDLE 状态需要判断为真
-    assign TARGET = {1'b1, 5'b10010};
     
-    reg [5:0] state_currnet;
-    reg [5:0] state_next;
-    reg [3:0] p;
     reg stopped;
     reg started;
-    
-    wire val_current;
-    wire val_target;
-    wire [5:0] success;
-    wire [5:0] failed;
-    wire state_success;
+    reg [7:0] state_currnet;
+    reg [7:0] state_next;
+    reg [3:0] p;
     wire switch_end;
-    wire found;
-    
-    // 当前匹配成功/失败之后的状态跳转
-    parameter SUCCESS_TABLE = {S0, SD, S4, S3, S2, S1};
-    parameter FAILED_TABLE  = {SD, S0, S0, S1, S1, S0};
-    
-    assign success       = SUCCESS_TABLE[state_currnet<<3+:8];
-    assign failed        = FAILED_TABLE[state_currnet<<3+:8];
-    // 当前需要判断的输入比特值，特殊：IDEL时button和S4时switch_end
-    assign val_current   = state_currnet == SD ? button : 
-                           state_currnet == S4 ? (switch_end | switch[p]) : 
-                           switch_end ? 1'b0 : switch[p];
-    // 当前判断正确的输入比特值
-    assign val_target    = TARGET[state_currnet];
-    // 匹配是否成功
-    assign state_success = val_current == val_target;
-    // 是否在当前匹配找到子串
-    assign found         = state_currnet == S4 && state_next == SD;
     // 匹配是否已经结束
-    assign switch_end    = (p == 4'd8) | led;
+    assign switch_end = (p == 4'd8) | led;
     
     // 次态寄存器迁移到现态寄存器
     always @ (posedge clk or posedge rst) begin
@@ -55,23 +28,41 @@ module sequence_detection (input wire clk,
         else state_currnet <= state_next;
     end
     
-    // 状态转移条件判断（大部分条件放前面几行了）
-    always @ (*) state_next <= state_success ? success : failed;
+    // 状态转移条件判断
+    always @ (*) begin
+        case (state_currnet)
+            SD: state_next = switch_end ? SD : button       ? S0 : SD;
+            S0: state_next = switch_end ? SD : switch[p]    ? S1 : S0;
+            S1: state_next = switch_end ? SD : ~switch[p]   ? S2 : S1;
+            S2: state_next = switch_end ? SD : ~switch[p]   ? S3 : S1;
+            S3: state_next = switch_end ? SD : switch[p]    ? S4 : S0;
+            S4: state_next = switch_end ? SD : ~switch[p]   ? SD : S0;
+        endcase
+    end
     
     // 次态寄存器输出
     always @ (posedge clk or posedge rst) begin
-        if (rst | button) begin
+        if (rst) begin
             p       <= 4'b0;
             led     <= 1'b0;
             stopped <= 1'b0;
-            if (rst) started <= 1'b0;
-            else     started <= 1'b1;
+            started <= 1'b0;
         end
         else begin
-            if (switch_end)               p       <= 4'b0;
-            else if (!stopped && started) p       <= p + 4'b1;
-            if (found)                    led     <= 1'b1;
-            if (switch_end)               stopped <= 1'b1;
+            if (button) begin
+                p       <= 4'b0;
+                led     <= 1'b0;
+                stopped <= 1'b0;
+                started <= 1'b1;
+            end
+            else begin
+                if (switch_end)               p <= 4'b0;
+                else if (!stopped && started) p <= p + 4'b1;
+                if (state_currnet == S4 && state_next == SD) begin
+                    led <= 1'b1;
+                end
+                if (switch_end)               stopped <= 1'b1;
+            end
         end
     end
 endmodule

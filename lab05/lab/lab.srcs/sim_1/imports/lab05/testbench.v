@@ -101,12 +101,21 @@ always @(posedge clk) begin
     end
 end
 
+// wire [5:0] state_currnet;
+// wire [5:0] state_next;
+// wire [3:0] p;
+// wire found;
+
 sequence_detection u_sequence_detection (
     .clk    (clk   ),
 	.rst    (rst   ),
 	.button (button_pos_delay),
 	.switch (switch),
 	.led    (led   )
+	// .state_currnet(state_currnet),
+	// .state_next(state_next),
+	// .p(p),
+	// .found(found)
 );
 
 endmodule

@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Programs/lab-digital-logic/lab05/lab/lab.sim/sim_1/impl/func/xsim/testbench_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sequence_detection
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Programs/lab-digital-logic/lab05/lab/lab.srcs/sim_1/imports/lab05/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
