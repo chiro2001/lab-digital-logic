@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1638957134">
+<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1639103787">
   <File Type="PA-TCL" Name="sequence_detection.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="sequence_detection_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="sequence_detection_reports.tcl"/>
   <File Type="RDS-RDS" Name="sequence_detection.vds"/>
   <File Type="RDS-UTIL" Name="sequence_detection_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="sequence_detection_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="sequence_detection.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="sequence_detection_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="sequence_detection_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/lab05/sequence_detection.v">

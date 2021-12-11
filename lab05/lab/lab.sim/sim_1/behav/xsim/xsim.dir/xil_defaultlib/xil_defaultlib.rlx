@@ -4,4 +4,4 @@ Dec  7 2018
 00:33:28
 D:/Programs/lab-digital-logic/lab05/lab/lab.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
 D:/Programs/lab-digital-logic/lab05/lab/lab.srcs/sim_1/imports/lab05/testbench.v,1638955185,verilog,,,,testbench,,,,,,,,
-D:/Programs/lab-digital-logic/lab05/lab/lab.srcs/sources_1/imports/lab05/sequence_detection.v,1638956779,verilog,,D:/Programs/lab-digital-logic/lab05/lab/lab.srcs/sim_1/imports/lab05/testbench.v,,sequence_detection,,,,,,,,
+D:/Programs/lab-digital-logic/lab05/lab/lab.srcs/sources_1/imports/lab05/sequence_detection.v,1639103779,verilog,,D:/Programs/lab-digital-logic/lab05/lab/lab.srcs/sim_1/imports/lab05/testbench.v,,sequence_detection,,,,,,,,

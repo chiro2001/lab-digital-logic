@@ -33,6 +33,7 @@ module sequence_detection (input wire clk,
             S2: state_next = switch_end ? SD : ~switch[p]   ? S3 : S1;
             S3: state_next = switch_end ? SD : switch[p]    ? S4 : S0;
             S4: state_next = switch_end | switch[p]         ? SD : S0;
+            default: state_next = SD;
         endcase
     end
     

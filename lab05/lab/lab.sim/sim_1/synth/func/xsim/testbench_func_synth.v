@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Wed Dec  8 17:55:35 2021
+// Date        : Fri Dec 10 10:38:44 2021
 // Host        : Chiro running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode funcsim -nolib -force -file
 //               D:/Programs/lab-digital-logic/lab05/lab/lab.sim/sim_1/synth/func/xsim/testbench_func_synth.v
@@ -27,26 +27,17 @@ module sequence_detection
   input [7:0]switch;
   output led;
 
-  wire \FSM_onehot_state_currnet_reg_n_0_[5] ;
-  wire \FSM_onehot_state_next_reg[0]_i_1_n_0 ;
-  wire \FSM_onehot_state_next_reg[0]_i_2_n_0 ;
-  wire \FSM_onehot_state_next_reg[1]_i_1_n_0 ;
-  wire \FSM_onehot_state_next_reg[2]_i_1_n_0 ;
-  wire \FSM_onehot_state_next_reg[3]_i_1_n_0 ;
-  wire \FSM_onehot_state_next_reg[4]_i_1_n_0 ;
-  wire \FSM_onehot_state_next_reg[4]_i_2_n_0 ;
-  wire \FSM_onehot_state_next_reg[5]_i_1_n_0 ;
-  wire \FSM_onehot_state_next_reg[5]_i_2_n_0 ;
-  wire \FSM_onehot_state_next_reg[5]_i_3_n_0 ;
-  wire \FSM_onehot_state_next_reg[5]_i_5_n_0 ;
-  wire \FSM_onehot_state_next_reg[5]_i_6_n_0 ;
-  wire \FSM_onehot_state_next_reg_n_0_[1] ;
+  wire \FSM_sequential_state_currnet[1]_i_1_n_0 ;
+  wire \FSM_sequential_state_currnet[2]_i_3_n_0 ;
+  wire \FSM_sequential_state_currnet[2]_i_4_n_0 ;
+  wire \FSM_sequential_state_currnet[2]_i_5_n_0 ;
   wire button;
   wire button_IBUF;
   wire clk;
   wire clk_IBUF;
   wire clk_IBUF_BUFG;
   wire led;
+  wire led0;
   wire led_OBUF;
   wire led_i_1_n_0;
   wire [3:0]p;
@@ -58,232 +49,103 @@ module sequence_detection
   wire rst;
   wire rst_IBUF;
   wire started;
-  wire [4:0]state_currnet;
-  wire [5:0]state_next;
+  wire [2:0]state_currnet;
   wire state_next3;
+  wire [2:0]state_next__0;
   wire [7:0]switch;
   wire [7:0]switch_IBUF;
 
-  (* FSM_ENCODED_STATES = "S2:001000,S1:000100,S3:010000,S4:100000,S0:000010,SD:000001" *) 
-  FDPE #(
-    .INIT(1'b1)) 
-    \FSM_onehot_state_currnet_reg[0] 
-       (.C(clk_IBUF_BUFG),
-        .CE(1'b1),
-        .D(state_next[0]),
-        .PRE(rst_IBUF),
-        .Q(state_currnet[0]));
-  (* FSM_ENCODED_STATES = "S2:001000,S1:000100,S3:010000,S4:100000,S0:000010,SD:000001" *) 
-  FDCE #(
-    .INIT(1'b0)) 
-    \FSM_onehot_state_currnet_reg[1] 
-       (.C(clk_IBUF_BUFG),
-        .CE(1'b1),
-        .CLR(rst_IBUF),
-        .D(\FSM_onehot_state_next_reg_n_0_[1] ),
-        .Q(state_currnet[1]));
-  (* FSM_ENCODED_STATES = "S2:001000,S1:000100,S3:010000,S4:100000,S0:000010,SD:000001" *) 
-  FDCE #(
-    .INIT(1'b0)) 
-    \FSM_onehot_state_currnet_reg[2] 
-       (.C(clk_IBUF_BUFG),
-        .CE(1'b1),
-        .CLR(rst_IBUF),
-        .D(state_next[2]),
-        .Q(state_currnet[2]));
-  (* FSM_ENCODED_STATES = "S2:001000,S1:000100,S3:010000,S4:100000,S0:000010,SD:000001" *) 
-  FDCE #(
-    .INIT(1'b0)) 
-    \FSM_onehot_state_currnet_reg[3] 
-       (.C(clk_IBUF_BUFG),
-        .CE(1'b1),
-        .CLR(rst_IBUF),
-        .D(state_next[3]),
-        .Q(state_currnet[3]));
-  (* FSM_ENCODED_STATES = "S2:001000,S1:000100,S3:010000,S4:100000,S0:000010,SD:000001" *) 
-  FDCE #(
-    .INIT(1'b0)) 
-    \FSM_onehot_state_currnet_reg[4] 
-       (.C(clk_IBUF_BUFG),
-        .CE(1'b1),
-        .CLR(rst_IBUF),
-        .D(state_next[4]),
-        .Q(state_currnet[4]));
-  (* FSM_ENCODED_STATES = "S2:001000,S1:000100,S3:010000,S4:100000,S0:000010,SD:000001" *) 
-  FDCE #(
-    .INIT(1'b0)) 
-    \FSM_onehot_state_currnet_reg[5] 
-       (.C(clk_IBUF_BUFG),
-        .CE(1'b1),
-        .CLR(rst_IBUF),
-        .D(state_next[5]),
-        .Q(\FSM_onehot_state_currnet_reg_n_0_[5] ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b1)) 
-    \FSM_onehot_state_next_reg[0] 
-       (.CLR(1'b0),
-        .D(\FSM_onehot_state_next_reg[0]_i_1_n_0 ),
-        .G(\FSM_onehot_state_next_reg[5]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(state_next[0]));
-  LUT5 #(
-    .INIT(32'hFFFFF222)) 
-    \FSM_onehot_state_next_reg[0]_i_1 
-       (.I0(\FSM_onehot_state_currnet_reg_n_0_[5] ),
-        .I1(\FSM_onehot_state_next_reg[4]_i_2_n_0 ),
-        .I2(state_currnet[4]),
-        .I3(\FSM_onehot_state_next_reg[5]_i_3_n_0 ),
-        .I4(\FSM_onehot_state_next_reg[0]_i_2_n_0 ),
-        .O(\FSM_onehot_state_next_reg[0]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hFF00FFF0FE00FEF0)) 
-    \FSM_onehot_state_next_reg[0]_i_2 
-       (.I0(state_currnet[2]),
-        .I1(state_currnet[3]),
+    .INIT(64'h1011515510115150)) 
+    \FSM_sequential_state_currnet[0]_i_1 
+       (.I0(\FSM_sequential_state_currnet[2]_i_3_n_0 ),
+        .I1(state_next3),
+        .I2(state_currnet[2]),
+        .I3(state_currnet[1]),
+        .I4(state_currnet[0]),
+        .I5(button_IBUF),
+        .O(state_next__0[0]));
+  LUT5 #(
+    .INIT(32'h00002320)) 
+    \FSM_sequential_state_currnet[1]_i_1 
+       (.I0(state_next3),
+        .I1(\FSM_sequential_state_currnet[2]_i_3_n_0 ),
         .I2(state_currnet[0]),
-        .I3(\FSM_onehot_state_next_reg[5]_i_3_n_0 ),
-        .I4(button_IBUF),
-        .I5(state_currnet[1]),
-        .O(\FSM_onehot_state_next_reg[0]_i_2_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \FSM_onehot_state_next_reg[1] 
-       (.CLR(1'b0),
-        .D(\FSM_onehot_state_next_reg[1]_i_1_n_0 ),
-        .G(\FSM_onehot_state_next_reg[5]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(\FSM_onehot_state_next_reg_n_0_[1] ));
-  LUT6 #(
-    .INIT(64'hFFFFFEFCAA00AA00)) 
-    \FSM_onehot_state_next_reg[1]_i_1 
-       (.I0(button_IBUF),
-        .I1(\FSM_onehot_state_currnet_reg_n_0_[5] ),
-        .I2(state_currnet[4]),
-        .I3(state_currnet[0]),
-        .I4(state_currnet[1]),
-        .I5(\FSM_onehot_state_next_reg[4]_i_2_n_0 ),
-        .O(\FSM_onehot_state_next_reg[1]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \FSM_onehot_state_next_reg[2] 
-       (.CLR(1'b0),
-        .D(\FSM_onehot_state_next_reg[2]_i_1_n_0 ),
-        .G(\FSM_onehot_state_next_reg[5]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(state_next[2]));
+        .I3(state_currnet[1]),
+        .I4(state_currnet[2]),
+        .O(\FSM_sequential_state_currnet[1]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT5 #(
-    .INIT(32'h0F000E00)) 
-    \FSM_onehot_state_next_reg[2]_i_1 
-       (.I0(state_currnet[2]),
-        .I1(state_currnet[1]),
-        .I2(\FSM_onehot_state_next_reg[5]_i_3_n_0 ),
-        .I3(state_next3),
-        .I4(state_currnet[3]),
-        .O(\FSM_onehot_state_next_reg[2]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \FSM_onehot_state_next_reg[3] 
-       (.CLR(1'b0),
-        .D(\FSM_onehot_state_next_reg[3]_i_1_n_0 ),
-        .G(\FSM_onehot_state_next_reg[5]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(state_next[3]));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
-  LUT2 #(
-    .INIT(4'h8)) 
-    \FSM_onehot_state_next_reg[3]_i_1 
-       (.I0(state_currnet[2]),
-        .I1(\FSM_onehot_state_next_reg[4]_i_2_n_0 ),
-        .O(\FSM_onehot_state_next_reg[3]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \FSM_onehot_state_next_reg[4] 
-       (.CLR(1'b0),
-        .D(\FSM_onehot_state_next_reg[4]_i_1_n_0 ),
-        .G(\FSM_onehot_state_next_reg[5]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(state_next[4]));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
-  LUT2 #(
-    .INIT(4'h8)) 
-    \FSM_onehot_state_next_reg[4]_i_1 
-       (.I0(state_currnet[3]),
-        .I1(\FSM_onehot_state_next_reg[4]_i_2_n_0 ),
-        .O(\FSM_onehot_state_next_reg[4]_i_1_n_0 ));
-  LUT4 #(
-    .INIT(16'h0151)) 
-    \FSM_onehot_state_next_reg[4]_i_2 
-       (.I0(\FSM_onehot_state_next_reg[5]_i_3_n_0 ),
-        .I1(\FSM_onehot_state_next_reg[5]_i_5_n_0 ),
-        .I2(p[2]),
-        .I3(\FSM_onehot_state_next_reg[5]_i_6_n_0 ),
-        .O(\FSM_onehot_state_next_reg[4]_i_2_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \FSM_onehot_state_next_reg[5] 
-       (.CLR(1'b0),
-        .D(\FSM_onehot_state_next_reg[5]_i_1_n_0 ),
-        .G(\FSM_onehot_state_next_reg[5]_i_2_n_0 ),
-        .GE(1'b1),
-        .Q(state_next[5]));
-  LUT3 #(
-    .INIT(8'h20)) 
-    \FSM_onehot_state_next_reg[5]_i_1 
-       (.I0(state_currnet[4]),
-        .I1(\FSM_onehot_state_next_reg[5]_i_3_n_0 ),
-        .I2(state_next3),
-        .O(\FSM_onehot_state_next_reg[5]_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \FSM_onehot_state_next_reg[5]_i_2 
-       (.I0(\FSM_onehot_state_currnet_reg_n_0_[5] ),
-        .I1(state_currnet[4]),
-        .I2(state_currnet[1]),
-        .I3(state_currnet[0]),
-        .I4(state_currnet[3]),
-        .I5(state_currnet[2]),
-        .O(\FSM_onehot_state_next_reg[5]_i_2_n_0 ));
+    .INIT(32'h01002020)) 
+    \FSM_sequential_state_currnet[2]_i_1 
+       (.I0(state_next3),
+        .I1(\FSM_sequential_state_currnet[2]_i_3_n_0 ),
+        .I2(state_currnet[2]),
+        .I3(state_currnet[1]),
+        .I4(state_currnet[0]),
+        .O(state_next__0[2]));
   LUT6 #(
     .INIT(64'h00000000EAAAAAAA)) 
-    \FSM_onehot_state_next_reg[5]_i_3 
+    \FSM_sequential_state_currnet[2]_i_3 
        (.I0(led_OBUF),
         .I1(p[3]),
         .I2(p[2]),
         .I3(p[0]),
         .I4(p[1]),
         .I5(button_IBUF),
-        .O(\FSM_onehot_state_next_reg[5]_i_3_n_0 ));
-  MUXF7 \FSM_onehot_state_next_reg[5]_i_4 
-       (.I0(\FSM_onehot_state_next_reg[5]_i_5_n_0 ),
-        .I1(\FSM_onehot_state_next_reg[5]_i_6_n_0 ),
-        .O(state_next3),
-        .S(p[2]));
+        .O(\FSM_sequential_state_currnet[2]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    \FSM_onehot_state_next_reg[5]_i_5 
+    \FSM_sequential_state_currnet[2]_i_4 
        (.I0(switch_IBUF[3]),
         .I1(switch_IBUF[2]),
         .I2(p[1]),
         .I3(switch_IBUF[1]),
         .I4(p[0]),
         .I5(switch_IBUF[0]),
-        .O(\FSM_onehot_state_next_reg[5]_i_5_n_0 ));
+        .O(\FSM_sequential_state_currnet[2]_i_4_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    \FSM_onehot_state_next_reg[5]_i_6 
+    \FSM_sequential_state_currnet[2]_i_5 
        (.I0(switch_IBUF[7]),
         .I1(switch_IBUF[6]),
         .I2(p[1]),
         .I3(switch_IBUF[5]),
         .I4(p[0]),
         .I5(switch_IBUF[4]),
-        .O(\FSM_onehot_state_next_reg[5]_i_6_n_0 ));
+        .O(\FSM_sequential_state_currnet[2]_i_5_n_0 ));
+  (* FSM_ENCODED_STATES = "S2:011,S1:010,S3:100,S4:101,S0:001,SD:000" *) 
+  FDCE #(
+    .INIT(1'b0)) 
+    \FSM_sequential_state_currnet_reg[0] 
+       (.C(clk_IBUF_BUFG),
+        .CE(1'b1),
+        .CLR(rst_IBUF),
+        .D(state_next__0[0]),
+        .Q(state_currnet[0]));
+  (* FSM_ENCODED_STATES = "S2:011,S1:010,S3:100,S4:101,S0:001,SD:000" *) 
+  FDCE #(
+    .INIT(1'b0)) 
+    \FSM_sequential_state_currnet_reg[1] 
+       (.C(clk_IBUF_BUFG),
+        .CE(1'b1),
+        .CLR(rst_IBUF),
+        .D(\FSM_sequential_state_currnet[1]_i_1_n_0 ),
+        .Q(state_currnet[1]));
+  (* FSM_ENCODED_STATES = "S2:011,S1:010,S3:100,S4:101,S0:001,SD:000" *) 
+  FDCE #(
+    .INIT(1'b0)) 
+    \FSM_sequential_state_currnet_reg[2] 
+       (.C(clk_IBUF_BUFG),
+        .CE(1'b1),
+        .CLR(rst_IBUF),
+        .D(state_next__0[2]),
+        .Q(state_currnet[2]));
+  MUXF7 \FSM_sequential_state_currnet_reg[2]_i_2 
+       (.I0(\FSM_sequential_state_currnet[2]_i_4_n_0 ),
+        .I1(\FSM_sequential_state_currnet[2]_i_5_n_0 ),
+        .O(state_next3),
+        .S(p[2]));
   IBUF button_IBUF_inst
        (.I(button),
         .O(button_IBUF));
@@ -296,14 +158,23 @@ module sequence_detection
   OBUF led_OBUF_inst
        (.I(led_OBUF),
         .O(led));
-  LUT4 #(
-    .INIT(16'h0F08)) 
+  LUT3 #(
+    .INIT(8'h32)) 
     led_i_1
-       (.I0(\FSM_onehot_state_next_reg_n_0_[1] ),
-        .I1(\FSM_onehot_state_currnet_reg_n_0_[5] ),
-        .I2(button_IBUF),
-        .I3(led_OBUF),
+       (.I0(led0),
+        .I1(button_IBUF),
+        .I2(led_OBUF),
         .O(led_i_1_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT5 #(
+    .INIT(32'h00040000)) 
+    led_i_2
+       (.I0(\FSM_sequential_state_currnet[2]_i_3_n_0 ),
+        .I1(state_currnet[0]),
+        .I2(state_next3),
+        .I3(state_currnet[1]),
+        .I4(state_currnet[2]),
+        .O(led0));
   FDCE #(
     .INIT(1'b0)) 
     led_reg
@@ -312,14 +183,14 @@ module sequence_detection
         .CLR(rst_IBUF),
         .D(led_i_1_n_0),
         .Q(led_OBUF));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT2 #(
     .INIT(4'hB)) 
     \p[0]_i_1 
        (.I0(button_IBUF),
         .I1(p[0]),
         .O(\p[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT3 #(
     .INIT(8'hEB)) 
     \p[1]_i_1 
@@ -327,7 +198,7 @@ module sequence_detection
         .I1(p[0]),
         .I2(p[1]),
         .O(\p[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT4 #(
     .INIT(16'hFEAB)) 
     \p[2]_i_1 
@@ -343,7 +214,7 @@ module sequence_detection
         .I1(started),
         .I2(button_IBUF),
         .O(\p[3]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT5 #(
     .INIT(32'h0000FE01)) 
     \p[3]_i_2 
