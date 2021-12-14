@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Programs/lab-digital-logic/lab04/lab/lab.srcs/sources_1/imports/实验4 数码管控制器设计/led_display_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_display
+INFO: [VRFC 10-311] analyzing module led_display_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Programs/lab-digital-logic/lab04/lab/lab.srcs/sim_1/imports/实验4 数码管控制器设计/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
