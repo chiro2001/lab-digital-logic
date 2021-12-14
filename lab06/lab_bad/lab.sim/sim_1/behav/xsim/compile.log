@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Programs/lab-digital-logic/lab06/lab/lab.srcs/sources_1/ip/clk_div/clk_div_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Programs/lab-digital-logic/lab06/lab/lab.srcs/sources_1/ip/clk_div/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Programs/lab-digital-logic/lab06/submit/calculator_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_display
+INFO: [VRFC 10-311] analyzing module calculator_display
+INFO: [VRFC 10-2458] undeclared symbol led_dp, assumed default net type wire [D:/Programs/lab-digital-logic/lab06/submit/calculator_display.v:98]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Programs/lab-digital-logic/lab06/submit/calculator_hex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculator_hex
+ERROR: [VRFC 10-1280] procedural assignment to a non-register done is not permitted, left-hand side should be reg/integer/time/genvar [D:/Programs/lab-digital-logic/lab06/submit/calculator_hex.v:56]
+ERROR: [VRFC 10-2865] module 'calculator_hex' ignored due to previous errors [D:/Programs/lab-digital-logic/lab06/submit/calculator_hex.v:1]
+INFO: [VRFC 10-311] analyzing module calculator_alu
+ERROR: [VRFC 10-2865] module 'calculator_alu' ignored due to previous errors [D:/Programs/lab-digital-logic/lab06/submit/calculator_hex.v:71]

@@ -1,0 +1,20 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Programs/lab-digital-logic/lab06/lab/lab.sim/sim_1/impl/func/xsim/testbench_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculator_alu
+INFO: [VRFC 10-311] analyzing module calculator_display
+INFO: [VRFC 10-311] analyzing module calculator_hex
+INFO: [VRFC 10-311] analyzing module calculator_top
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-311] analyzing module clk_div_clk_div_clk_wiz
+INFO: [VRFC 10-311] analyzing module led_display
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Programs/lab-digital-logic/lab06/calc_stu_pkg/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [VRFC 10-2458] undeclared symbol led_en, assumed default net type wire [D:/Programs/lab-digital-logic/lab06/calc_stu_pkg/testbench.v:162]
+INFO: [VRFC 10-2458] undeclared symbol led_ca, assumed default net type wire [D:/Programs/lab-digital-logic/lab06/calc_stu_pkg/testbench.v:163]
+INFO: [VRFC 10-2458] undeclared symbol led_cb, assumed default net type wire [D:/Programs/lab-digital-logic/lab06/calc_stu_pkg/testbench.v:164]
+INFO: [VRFC 10-2458] undeclared symbol led_cc, assumed default net type wire [D:/Programs/lab-digital-logic/lab06/calc_stu_pkg/testbench.v:165]
+INFO: [VRFC 10-2458] undeclared symbol led_cd, assumed default net type wire [D:/Programs/lab-digital-logic/lab06/calc_stu_pkg/testbench.v:166]
+INFO: [VRFC 10-2458] undeclared symbol led_ce, assumed default net type wire [D:/Programs/lab-digital-logic/lab06/calc_stu_pkg/testbench.v:167]
+INFO: [VRFC 10-2458] undeclared symbol led_cf, assumed default net type wire [D:/Programs/lab-digital-logic/lab06/calc_stu_pkg/testbench.v:168]
+INFO: [VRFC 10-2458] undeclared symbol led_cg, assumed default net type wire [D:/Programs/lab-digital-logic/lab06/calc_stu_pkg/testbench.v:169]
+INFO: [VRFC 10-2458] undeclared symbol led_dp, assumed default net type wire [D:/Programs/lab-digital-logic/lab06/calc_stu_pkg/testbench.v:170]

@@ -27,25 +27,29 @@ module calculator_top (
     
     calculator_hex u_calculator_hex (
     .clk        (clk_g),
-    .rst        (rst),
+    .rst        (rst || !(locked)),
+    .button     (button),
+    .num1       (num1),
+    .num2       (num2),
+    .func       (func),
     .cal_result (cal_result),
     .done       (done)
     );
     
     calculator_display u_calculator_display (
     .clk        (clk_g),
-    .rst        (rst),
+    .rst        (rst || !(locked)),
     .cal_result (cal_result),
     .done       (done),
-    .len_en     (led_en),
+    .led_en     (led_en),
     .led_ca     (led_ca),
-    .led_ca     (led_cb),
-    .led_ca     (led_cc),
-    .led_ca     (led_cd),
-    .led_ca     (led_ce),
-    .led_ca     (led_cf),
-    .led_ca     (led_cg),
-    .led_ca     (led_cp)
+    .led_cb     (led_cb),
+    .led_cc     (led_cc),
+    .led_cd     (led_cd),
+    .led_ce     (led_ce),
+    .led_cf     (led_cf),
+    .led_cg     (led_cg),
+    .led_dp     (led_dp)
     );
     
 endmodule

@@ -1,61 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1637745658">
-  <File Type="ROUTE-PWR" Name="led_display_ctrl_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="led_display_ctrl.tcl"/>
-  <File Type="BITSTR-BMM" Name="led_display_ctrl_bd.bmm"/>
-  <File Type="ROUTE-PWR-SUM" Name="led_display_ctrl_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="led_display_ctrl_reports.tcl"/>
-  <File Type="OPT-DCP" Name="led_display_ctrl_opt.dcp"/>
-  <File Type="OPT-DRC" Name="led_display_ctrl_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="led_display_ctrl.hwdef"/>
-  <File Type="PWROPT-DCP" Name="led_display_ctrl_pwropt.dcp"/>
-  <File Type="PLACE-DCP" Name="led_display_ctrl_placed.dcp"/>
-  <File Type="PLACE-IO" Name="led_display_ctrl_io_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="led_display_ctrl_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="led_display_ctrl_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="led_display_ctrl_control_sets_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="led_display_ctrl_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="led_display_ctrl.bgn"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="led_display_ctrl_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="led_display_ctrl.bin"/>
-  <File Type="PHYSOPT-DCP" Name="led_display_ctrl_physopt.dcp"/>
-  <File Type="BITSTR-MSK" Name="led_display_ctrl.msk"/>
-  <File Type="ROUTE-ERROR-DCP" Name="led_display_ctrl_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="led_display_ctrl_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="led_display_ctrl_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="led_display_ctrl_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="led_display_ctrl_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="led_display_ctrl_drc_routed.rpx"/>
-  <File Type="BITSTR-LTX" Name="led_display_ctrl.ltx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="led_display_ctrl_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-MMI" Name="led_display_ctrl.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="led_display_ctrl_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="led_display_ctrl_methodology_drc_routed.pb"/>
-  <File Type="BITSTR-SYSDEF" Name="led_display_ctrl.sysdef"/>
-  <File Type="ROUTE-PWR-RPX" Name="led_display_ctrl_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="led_display_ctrl_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="led_display_ctrl_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="led_display_ctrl_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="led_display_ctrl_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="led_display_ctrl_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-CLK" Name="led_display_ctrl_clock_utilization_routed.rpt"/>
-  <File Type="RDI-RDI" Name="led_display_ctrl.vdi"/>
-  <File Type="ROUTE-BUS-SKEW" Name="led_display_ctrl_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="led_display_ctrl_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="led_display_ctrl_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="led_display_ctrl_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="led_display_ctrl_postroute_physopt_bb.dcp"/>
-  <File Type="BG-BIT" Name="led_display_ctrl.bit"/>
-  <File Type="BITSTR-RBT" Name="led_display_ctrl.rbt"/>
-  <File Type="BITSTR-NKY" Name="led_display_ctrl.nky"/>
-  <File Type="BG-DRC" Name="led_display_ctrl.drc"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1639485929">
+  <File Type="OPT-HWDEF" Name="calculator_top.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW" Name="calculator_top_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="calculator_top.dcp"/>
+  <File Type="BITSTR-BMM" Name="calculator_top_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="calculator_top_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="calculator_top_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="calculator_top_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="calculator_top.tcl"/>
+  <File Type="OPT-TIMING" Name="calculator_top_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="calculator_top_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="calculator_top_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="calculator_top_reports.tcl"/>
+  <File Type="OPT-DRC" Name="calculator_top_drc_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="calculator_top_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="calculator_top_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="calculator_top_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="calculator_top_placed.dcp"/>
+  <File Type="PLACE-IO" Name="calculator_top_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="calculator_top_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="calculator_top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="calculator_top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="calculator_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="calculator_top_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="calculator_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="calculator_top_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="calculator_top_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="calculator_top.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="calculator_top_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="calculator_top_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="calculator_top_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="calculator_top.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="calculator_top_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="calculator_top_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="calculator_top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="calculator_top_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="calculator_top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="calculator_top_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="calculator_top.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="calculator_top_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="calculator_top.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="calculator_top_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="calculator_top_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="calculator_top.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="calculator_top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="calculator_top_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="calculator_top_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="calculator_top_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="calculator_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="calculator_top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="calculator_top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="calculator_top_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="calculator_top_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="calculator_top_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="calculator_top_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="calculator_top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="calculator_top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="calculator_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="calculator_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="calculator_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="calculator_top_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="calculator_top_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="calculator_top.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="calculator_top_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="calculator_top.rbt"/>
+  <File Type="BITSTR-NKY" Name="calculator_top.nky"/>
+  <File Type="BG-BGN" Name="calculator_top.bgn"/>
+  <File Type="BG-DRC" Name="calculator_top.drc"/>
+  <File Type="RDI-RDI" Name="calculator_top.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/imports/实验4 数码管控制器设计/led_display_ctrl.v">
+    <File Path="$PPRDIR/../submit/calculator_display.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../lab04/实验4 数码管控制器设计/led_display_ctrl.v"/>
-        <Attr Name="ImportTime" Val="1637415208"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../submit/calculator_hex.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../submit/calculator_top.v">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -63,20 +95,20 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="led_display_ctrl"/>
+      <Option Name="TopModule" Val="calculator_top"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PSRCDIR/constrs_1/new/leds.xdc">
+    <File Path="$PSRCDIR/constrs_1/new/lab.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
     <Config>
-      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/leds.xdc"/>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/lab.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
@@ -98,4 +130,5 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_div"/>
 </GenRun>

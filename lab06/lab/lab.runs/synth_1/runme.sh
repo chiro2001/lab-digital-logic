@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Programs/lab-digital-logic/lab04/lab/lab.runs/synth_1'
+HD_PWD='D:/Programs/lab-digital-logic/lab06/lab/lab.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log led_display_ctrl.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source led_display_ctrl.tcl
+EAStep vivado -log calculator_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source calculator_top.tcl

@@ -71,7 +71,7 @@ module led_display #(
 	end
 endmodule
 
-module calculator_hex #(
+module calculator_display #(
     parameter WIDTH_RESULT = 32,
     parameter DELAY = 5
 ) (
@@ -87,7 +87,7 @@ module calculator_hex #(
     output wire led_ce,
     output wire led_cf,
     output wire led_cg,
-    output wire led_cp
+    output wire led_dp
 );
     reg [31:0] values;
     wire [7:0] led_cx;
@@ -109,7 +109,7 @@ module calculator_hex #(
 
     led_display #(
         .DELAY(DELAY)
-    ) led_display_u (
+    ) u_led_display (
         .clk(clk),
         .rst(rst),
         .values(values),

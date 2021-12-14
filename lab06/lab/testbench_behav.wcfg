@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="13075000001fs"></ZoomEndTime>
+      <Cursor1Time time="13075000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="145"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="50" />
+   <wvobject fp_name="/testbench/u_calculator_top/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/button" type="logic">
+      <obj_property name="ElementShortName">button</obj_property>
+      <obj_property name="ObjectShortName">button</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/func" type="array">
+      <obj_property name="ElementShortName">func[2:0]</obj_property>
+      <obj_property name="ObjectShortName">func[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/num1" type="array">
+      <obj_property name="ElementShortName">num1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">num1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/num2" type="array">
+      <obj_property name="ElementShortName">num2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">num2[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/led_en" type="array">
+      <obj_property name="ElementShortName">led_en[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led_en[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/clk_g" type="logic">
+      <obj_property name="ElementShortName">clk_g</obj_property>
+      <obj_property name="ObjectShortName">clk_g</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/cal_result" type="array">
+      <obj_property name="ElementShortName">cal_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cal_result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/locked" type="logic">
+      <obj_property name="ElementShortName">locked</obj_property>
+      <obj_property name="ObjectShortName">locked</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/func" type="array">
+      <obj_property name="ElementShortName">func[2:0]</obj_property>
+      <obj_property name="ObjectShortName">func[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/button" type="logic">
+      <obj_property name="ElementShortName">button</obj_property>
+      <obj_property name="ObjectShortName">button</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/num1" type="array">
+      <obj_property name="ElementShortName">num1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">num1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/num2" type="array">
+      <obj_property name="ElementShortName">num2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">num2[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/cal_result" type="array">
+      <obj_property name="ElementShortName">cal_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cal_result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/cal_result_reg" type="array">
+      <obj_property name="ElementShortName">cal_result_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cal_result_reg[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/u_calculator_alu/result" type="array">
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/calculating" type="logic">
+      <obj_property name="ElementShortName">calculating</obj_property>
+      <obj_property name="ObjectShortName">calculating</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/done_reg" type="logic">
+      <obj_property name="ElementShortName">done_reg</obj_property>
+      <obj_property name="ObjectShortName">done_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/alu_done" type="logic">
+      <obj_property name="ElementShortName">alu_done</obj_property>
+      <obj_property name="ObjectShortName">alu_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/alu_op1" type="array">
+      <obj_property name="ElementShortName">alu_op1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_op1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/alu_op2" type="array">
+      <obj_property name="ElementShortName">alu_op2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_op2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/result" type="array">
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_display/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_display/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_display/cal_result" type="array">
+      <obj_property name="ElementShortName">cal_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cal_result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_display/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_display/led_en" type="array">
+      <obj_property name="ElementShortName">led_en[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led_en[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_display/values" type="array">
+      <obj_property name="ElementShortName">values[31:0]</obj_property>
+      <obj_property name="ObjectShortName">values[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_display/led_cx" type="array">
+      <obj_property name="ElementShortName">led_cx[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led_cx[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_display/started" type="logic">
+      <obj_property name="ElementShortName">started</obj_property>
+      <obj_property name="ObjectShortName">started</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_display/dismiss" type="logic">
+      <obj_property name="ElementShortName">dismiss</obj_property>
+      <obj_property name="ObjectShortName">dismiss</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_display/led_dp" type="logic">
+      <obj_property name="ElementShortName">led_dp</obj_property>
+      <obj_property name="ObjectShortName">led_dp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/u_calculator_alu/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/u_calculator_alu/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/u_calculator_alu/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/u_calculator_alu/alu_op" type="array">
+      <obj_property name="ElementShortName">alu_op[2:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_op[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/u_calculator_alu/op1" type="array">
+      <obj_property name="ElementShortName">op1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">op1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/u_calculator_alu/op2" type="array">
+      <obj_property name="ElementShortName">op2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">op2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/u_calculator_alu/a" type="array">
+      <obj_property name="ElementShortName">a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">a[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/u_calculator_alu/b" type="array">
+      <obj_property name="ElementShortName">b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">b[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/u_calculator_alu/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/u_calculator_alu/result" type="array">
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/u_calculator_alu/started" type="logic">
+      <obj_property name="ElementShortName">started</obj_property>
+      <obj_property name="ObjectShortName">started</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/u_calculator_alu/done_reg" type="logic">
+      <obj_property name="ElementShortName">done_reg</obj_property>
+      <obj_property name="ObjectShortName">done_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/u_calculator_alu/result_reg" type="array">
+      <obj_property name="ElementShortName">result_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result_reg[31:0]</obj_property>
+   </wvobject>
+</wave_config>
