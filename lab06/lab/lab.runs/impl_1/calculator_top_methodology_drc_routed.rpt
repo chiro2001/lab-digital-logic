@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Tue Dec 14 20:55:15 2021
-| Host         : Chiro running 64-bit major release  (build 9200)
+| Date         : Wed Dec 15 15:30:44 2021
+| Host         : PA43 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file calculator_top_methodology_drc_routed.rpt -pb calculator_top_methodology_drc_routed.pb -rpx calculator_top_methodology_drc_routed.rpx
 | Design       : calculator_top
 | Device       : xc7a100tfgg484-1
@@ -20,7 +20,7 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: checkpoint_calculator_top
+          Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
              Violations found: 4
@@ -35,7 +35,7 @@ Table of Contents
 -----------------
 LUTAR-1#1 Warning
 LUT drives async reset alert  
-LUT cell u_calculator_hex/u_calculator_alu/started2_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_calculator_display/values_reg[0]/CLR, u_calculator_display/values_reg[10]/CLR, u_calculator_display/values_reg[11]/CLR, u_calculator_display/values_reg[12]/CLR, u_calculator_display/values_reg[13]/CLR, u_calculator_display/values_reg[14]/CLR, u_calculator_display/values_reg[15]/CLR, u_calculator_display/values_reg[16]/CLR, u_calculator_display/values_reg[17]/CLR, u_calculator_display/values_reg[18]/CLR, u_calculator_display/values_reg[19]/CLR, u_calculator_display/values_reg[1]/CLR, u_calculator_display/values_reg[20]/CLR, u_calculator_display/values_reg[21]/CLR, u_calculator_display/values_reg[22]/CLR (the first 15 of 161 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell u_calculator_hex/u_calculator_alu/started2_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_calculator_display/values_reg[0]/CLR, u_calculator_display/values_reg[10]/CLR, u_calculator_display/values_reg[11]/CLR, u_calculator_display/values_reg[12]/CLR, u_calculator_display/values_reg[13]/CLR, u_calculator_display/values_reg[14]/CLR, u_calculator_display/values_reg[15]/CLR, u_calculator_display/values_reg[16]/CLR, u_calculator_display/values_reg[17]/CLR, u_calculator_display/values_reg[18]/CLR, u_calculator_display/values_reg[19]/CLR, u_calculator_display/values_reg[1]/CLR, u_calculator_display/values_reg[20]/CLR, u_calculator_display/values_reg[21]/CLR, u_calculator_display/values_reg[22]/CLR (the first 15 of 162 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 SYNTH-10#1 Warning

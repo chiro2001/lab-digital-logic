@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:D:/Programs/lab-digital-logic/lab06/lab/lab.srcs/constrs_1/new/lab.xdc rfile:../../../lab.srcs/constrs_1/new/lab.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:Z:/Programs/lab-digital-logic/lab06/lab/lab.srcs/constrs_1/new/lab.xdc rfile:../../../lab.srcs/constrs_1/new/lab.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN Y18 [get_ports clk]
 set_property src_info {type:XDC file:1 line:40 export:INPUT save:INPUT read:READ} [current_design]

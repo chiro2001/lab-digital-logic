@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Tue Dec 14 20:55:21 2021
-| Host             : Chiro running 64-bit major release  (build 9200)
+| Date             : Wed Dec 15 15:30:46 2021
+| Host             : PA43 running 64-bit major release  (build 9200)
 | Command          : report_power -file calculator_top_power_routed.rpt -pb calculator_top_power_summary_routed.pb -rpx calculator_top_power_routed.rpx
 | Design           : calculator_top
 | Device           : xc7a100tfgg484-1
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        5 |       --- |             --- |
-| Slice Logic    |     0.001 |     2491 |       --- |             --- |
-|   LUT as Logic |     0.001 |     1751 |     63400 |            2.76 |
+| Slice Logic    |     0.002 |     2495 |       --- |             --- |
+|   LUT as Logic |     0.001 |     1728 |     63400 |            2.73 |
 |   CARRY4       |    <0.001 |      440 |     15850 |            2.78 |
 |   F7/F8 Muxes  |    <0.001 |       28 |     63400 |            0.04 |
-|   Register     |    <0.001 |      161 |    126800 |            0.13 |
+|   Register     |    <0.001 |      162 |    126800 |            0.13 |
 |   Others       |     0.000 |       10 |       --- |             --- |
-| Signals        |     0.002 |     2365 |       --- |             --- |
+| Signals        |     0.002 |     2370 |       --- |             --- |
 | MMCM           |     0.106 |        1 |         6 |           16.67 |
 | DSPs           |    <0.001 |        3 |       240 |            1.25 |
-| I/O            |    <0.001 |       38 |       285 |           13.33 |
+| I/O            |     0.001 |       38 |       285 |           13.33 |
 | Static Power   |     0.097 |          |           |                 |
 | Total          |     0.208 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+

@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Dec 15 17:36:38 2021
+# Process ID: 704
+# Current directory: C:/Users/Administrator/Desktop/calculator_hex
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12976 C:\Users\Administrator\Desktop\calculator_hex\calculator_hex.xpr
+# Log file: C:/Users/Administrator/Desktop/calculator_hex/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/calculator_hex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.xpr
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+file mkdir C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v w ]
+add_files -fileset sim_1 C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source testbench.tcl
+run all
+current_wave_config {Untitled 1}
+add_wave {{/testbench}} 
+close_sim
+launch_simulation
+source testbench.tcl
+run all
+run all
+run all
+close_sim

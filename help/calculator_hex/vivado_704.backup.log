@@ -1,0 +1,243 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Dec 15 17:36:38 2021
+# Process ID: 704
+# Current directory: C:/Users/Administrator/Desktop/calculator_hex
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12976 C:\Users\Administrator\Desktop\calculator_hex\calculator_hex.xpr
+# Log file: C:/Users/Administrator/Desktop/calculator_hex/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/calculator_hex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+file mkdir C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v w ]
+add_files -fileset sim_1 C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sources_1/ip/clk_div/clk_div_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sources_1/ip/clk_div/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sources_1/new/calculator_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_display
+INFO: [VRFC 10-311] analyzing module calculator_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sources_1/new/calculator_hex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculator_hex
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sources_1/new/calculator_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculator_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [VRFC 10-2458] undeclared symbol led_en, assumed default net type wire [C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v:163]
+INFO: [VRFC 10-2458] undeclared symbol led_ca, assumed default net type wire [C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v:164]
+INFO: [VRFC 10-2458] undeclared symbol led_cb, assumed default net type wire [C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v:165]
+INFO: [VRFC 10-2458] undeclared symbol led_cc, assumed default net type wire [C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v:166]
+INFO: [VRFC 10-2458] undeclared symbol led_cd, assumed default net type wire [C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v:167]
+INFO: [VRFC 10-2458] undeclared symbol led_ce, assumed default net type wire [C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v:168]
+INFO: [VRFC 10-2458] undeclared symbol led_cf, assumed default net type wire [C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v:169]
+INFO: [VRFC 10-2458] undeclared symbol led_cg, assumed default net type wire [C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v:170]
+INFO: [VRFC 10-2458] undeclared symbol led_dp, assumed default net type wire [C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v:171]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto a8f26d4166bf479299a9cc2c49a35eb5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'led_en' [C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v:163]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=41,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_div_clk_wiz
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.calculator_hex
+Compiling module xil_defaultlib.led_display
+Compiling module xil_defaultlib.calculator_display
+Compiling module xil_defaultlib.calculator_top
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Dec 15 17:56:43 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 947.926 ; gain = 37.738
+run all
+index 6 finished
+====================================
+Test end!
+----PASS!!!
+$finish called at time : 16895 ns : File "C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v" Line 139
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/testbench}} 
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sources_1/ip/clk_div/clk_div_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sources_1/ip/clk_div/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sources_1/new/calculator_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_display
+INFO: [VRFC 10-311] analyzing module calculator_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sources_1/new/calculator_hex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculator_hex
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sources_1/new/calculator_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculator_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [VRFC 10-2458] undeclared symbol led_en, assumed default net type wire [C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v:163]
+INFO: [VRFC 10-2458] undeclared symbol led_ca, assumed default net type wire [C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v:164]
+INFO: [VRFC 10-2458] undeclared symbol led_cb, assumed default net type wire [C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v:165]
+INFO: [VRFC 10-2458] undeclared symbol led_cc, assumed default net type wire [C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v:166]
+INFO: [VRFC 10-2458] undeclared symbol led_cd, assumed default net type wire [C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v:167]
+INFO: [VRFC 10-2458] undeclared symbol led_ce, assumed default net type wire [C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v:168]
+INFO: [VRFC 10-2458] undeclared symbol led_cf, assumed default net type wire [C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v:169]
+INFO: [VRFC 10-2458] undeclared symbol led_cg, assumed default net type wire [C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v:170]
+INFO: [VRFC 10-2458] undeclared symbol led_dp, assumed default net type wire [C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v:171]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto a8f26d4166bf479299a9cc2c49a35eb5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'led_en' [C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v:163]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=41,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_div_clk_wiz
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.calculator_hex
+Compiling module xil_defaultlib.led_display
+Compiling module xil_defaultlib.calculator_display
+Compiling module xil_defaultlib.calculator_top
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 947.926 ; gain = 0.000
+run all
+index 6 finished
+====================================
+Test end!
+----PASS!!!
+$finish called at time : 16895 ns : File "C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v" Line 139
+run all
+wrong at index f
+=====================================
+Test end!
+----FAIL!!!
+function    : 0
+num1        : 00
+num2        : 00
+reference   : 00000000
+test module : 00301321
+$finish called at time : 17695 ns : File "C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v" Line 152
+run all
+wrong at index f
+=====================================
+Test end!
+----FAIL!!!
+function    : 0
+num1        : 00
+num2        : 00
+reference   : 00000000
+test module : 00301321
+$finish called at time : 17795 ns : File "C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v" Line 152
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 15 18:06:58 2021...

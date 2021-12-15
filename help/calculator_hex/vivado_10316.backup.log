@@ -1,0 +1,266 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Dec 15 15:16:22 2021
+# Process ID: 10316
+# Current directory: C:/Users/Administrator/Desktop/calculator_hex
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14024 C:\Users\Administrator\Desktop\calculator_hex\calculator_hex.xpr
+# Log file: C:/Users/Administrator/Desktop/calculator_hex/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/calculator_hex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 6
+[Wed Dec 15 15:19:49 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Wed Dec 15 15:20:39 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Dec 15 15:21:43 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Dec 15 15:25:05 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/synth_1/runme.log
+[Wed Dec 15 15:25:05 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn1" may be locked by another hw_server.
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:jsn1:3121
+ERROR: [Labtools 27-2223] Unable to connect to hw_server with URL "TCP:jsn1:3121".
+Resolution: 1. Check the host name, port number and network connectivity.
+2. Check to ensure the hw_server is running on the target.
+ERROR: [Common 17-39] 'connect_hw_server' failed due to earlier errors.
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/Port_#0005.Hub_#0001
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/calculator_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/calculator_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1762.703 ; gain = 0.145
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/Port_#0005.Hub_#0001
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Wed Dec 15 15:55:30 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Wed Dec 15 15:56:25 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Dec 15 15:57:34 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/runme.log
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-DLC9-Port_#0005.Hub_#0001" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1813.789 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/Port_#0005.Hub_#0001
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/calculator_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/calculator_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1813.789 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Wed Dec 15 16:06:51 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Wed Dec 15 16:07:53 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Dec 15 16:09:25 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/calculator_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1813.789 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Wed Dec 15 16:14:51 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Wed Dec 15 16:15:40 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Dec 15 16:16:56 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/calculator_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1813.789 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Dec 15 16:22:02 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/synth_1/runme.log
+[Wed Dec 15 16:22:02 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/calculator_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1813.789 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Dec 15 16:27:04 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/synth_1/runme.log
+[Wed Dec 15 16:27:04 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 221 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.116 . Memory (MB): peak = 2616.816 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.116 . Memory (MB): peak = 2616.816 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2616.816 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 2741.250 ; gain = 926.684
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/calculator_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2781.766 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Dec 15 16:42:10 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/synth_1/runme.log
+[Wed Dec 15 16:42:10 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Dec 15 16:44:25 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/synth_1/runme.log
+[Wed Dec 15 16:44:25 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/calculator_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2823.855 ; gain = 0.055
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+undo
+INFO: [Common 17-17] undo 'set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/calculator_top.bit} [get_hw_devices xc7a100t_0]'
+undo
+INFO: [Common 17-17] undo 'set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]'
+update_compile_order -fileset sources_1
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/Port_#0005.Hub_#0001
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Wed Dec 15 17:21:32 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Wed Dec 15 17:22:05 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Dec 15 17:23:15 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/synth_1/runme.log
+[Wed Dec 15 17:23:15 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/runme.log
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2837.238 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/Port_#0005.Hub_#0001
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/calculator_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/calculator_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2837.238 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Dec 15 17:32:14 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/synth_1/runme.log
+[Wed Dec 15 17:32:14 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/calculator_hex/calculator_hex.runs/impl_1/calculator_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2837.711 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 15 17:35:20 2021...

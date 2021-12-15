@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Tue Dec 14 20:49:05 2021
-| Host         : Chiro running 64-bit major release  (build 9200)
+| Date         : Wed Dec 15 15:29:35 2021
+| Host         : PA43 running 64-bit major release  (build 9200)
 | Command      : report_drc -file calculator_top_drc_opted.rpt -pb calculator_top_drc_opted.pb -rpx calculator_top_drc_opted.rpx
 | Design       : calculator_top
 | Device       : xc7a100tfgg484-1
@@ -20,7 +20,7 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: checkpoint_calculator_top
+          Floorplan: design_1
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>

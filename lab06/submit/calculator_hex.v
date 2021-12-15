@@ -15,6 +15,7 @@ module calculator_hex #(
     reg calculating;
     reg calculating2;
     reg done_reg;
+    reg button_reg;
     wire alu_done;
 
     reg [WIDTH_NUM1-1:0] alu_op1;
@@ -48,9 +49,11 @@ module calculator_hex #(
             done_reg <= 1'b0;
             alu_op1 <= {(WIDTH_NUM1){1'b0}};
             alu_op2 <= {(WIDTH_NUM2){1'b0}};
+            button_reg <= 1'b0;
         end
         else begin
             calculating2 <= calculating;
+            button_reg <= button;
             if (calculating && calculating2) begin
                 if (alu_done) begin
                     done_reg <= 1'b1;
@@ -63,7 +66,7 @@ module calculator_hex #(
                     done_reg <= 1'b0;
                 end
                 else begin
-                    if (button) begin
+                    if (button && !button_reg) begin
                         calculating <= 1'b1;
                         alu_op1 <= num1;
                         alu_op2 <= num2;

@@ -4,4 +4,4 @@ index 6 finished
  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  == 
 Test end!
 ----PASS!!!
-$finish called at time : 13075 ns : File "D:/Programs/lab-digital-logic/lab06/calc_stu_pkg/testbench.v" Line 138
+$finish called at time : 13075 ns : File "Z:/Programs/lab-digital-logic/lab06/calc_stu_pkg/testbench.v" Line 139

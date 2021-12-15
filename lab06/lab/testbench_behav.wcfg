@@ -17,9 +17,9 @@
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="145"></ValueColumnWidth>
+      <ValueColumnWidth column_width="136"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="50" />
+   <WVObjectSize size="55" />
    <wvobject fp_name="/testbench/u_calculator_top/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -220,5 +220,26 @@
    <wvobject fp_name="/testbench/u_calculator_top/u_calculator_hex/u_calculator_alu/result_reg" type="array">
       <obj_property name="ElementShortName">result_reg[31:0]</obj_property>
       <obj_property name="ObjectShortName">result_reg[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_display/u_led_display/val" type="array">
+      <obj_property name="ElementShortName">val[3:0]</obj_property>
+      <obj_property name="ObjectShortName">val[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_display/u_led_display/led_en" type="array">
+      <obj_property name="ElementShortName">led_en[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led_en[7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/u_calculator_top/u_calculator_display/u_led_display/led_cx" type="array">
+      <obj_property name="ElementShortName">led_cx[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led_cx[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/led_en_result" type="array">
+      <obj_property name="ElementShortName">led_en_result[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led_en_result[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/led_cx" type="array">
+      <obj_property name="ElementShortName">led_cx[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led_cx[7:0]</obj_property>
    </wvobject>
 </wave_config>

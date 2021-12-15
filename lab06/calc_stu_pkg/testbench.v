@@ -48,6 +48,7 @@ module testbench ();
     wire button_pos = (button_cnt == 4'h1) & locked;
     
     wire button_pos_delay = (button_cnt == 4'h3) & locked;
+    // wire button_pos_delay = (button_cnt == 4'h3 || button_cnt == 4'h4 || button_cnt == 4'h5) & locked;
     
     wire cnt_end = (cnt == 4'h7);
     
@@ -151,6 +152,35 @@ module testbench ();
             $finish;
         end
     end
+
+    wire [7:0] led_en;
+    wire       led_ca;
+    wire       led_cb;
+    wire       led_cc;
+    wire       led_cd;
+    wire       led_ce;
+    wire       led_cf;
+    wire       led_cg;
+    wire       led_dp;
+    wire [7:0] led_cx = {led_dp,led_cg,led_cf,led_ce,led_cd,led_cc,led_cb,led_ca}; 
+    wire [7:0] led_en_result = led_en[0] + led_en[1] + led_en[2] + led_en[3] + led_en[4] + led_en[5] + led_en[6] + led_en[7];
+    wire led0 = (led_cx == 8'b11000000);
+    wire led1 = (led_cx == 8'b11111001);
+    wire led2 = (led_cx == 8'b10100100);
+    wire led3 = (led_cx == 8'b10110000);
+    wire led4 = (led_cx == 8'b10011001);
+    wire led5 = (led_cx == 8'b10010010);
+    wire led6 = (led_cx == 8'b10000010);
+    wire led7 = (led_cx == 8'b11111000);
+    wire led8 = (led_cx == 8'b10000000);
+    wire led9 = (led_cx == 8'b10011000); 
+    wire leda = (led_cx == ~8'b01110111); 
+    wire ledb = (led_cx == ~8'b01111100); 
+    wire ledc = (led_cx == ~8'b01011000); 
+    wire ledd = (led_cx == ~8'b01011110); 
+    wire lede = (led_cx == ~8'b01111001); 
+    wire ledf = (led_cx == ~8'b01110001); 
+    wire led_cx_v = led0 | led1 | led2 | led3 | led4 | led5 | led6 | led7 | led8 | led9 | leda | ledb | ledc | ledd | lede | ledf;
 
     calculator_top u_calculator_top (
     .clk    (clk),

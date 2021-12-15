@@ -17,28 +17,29 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a100tfgg484-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir D:/Programs/lab-digital-logic/lab06/lab/lab.cache/wt [current_project]
-set_property parent.project_path D:/Programs/lab-digital-logic/lab06/lab/lab.xpr [current_project]
+set_property webtalk.parent_dir Z:/Programs/lab-digital-logic/lab06/lab/lab.cache/wt [current_project]
+set_property parent.project_path Z:/Programs/lab-digital-logic/lab06/lab/lab.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo d:/Programs/lab-digital-logic/lab06/lab/lab.cache/ip [current_project]
+set_property ip_output_repo z:/Programs/lab-digital-logic/lab06/lab/lab.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  D:/Programs/lab-digital-logic/lab06/submit/calculator_display.v
-  D:/Programs/lab-digital-logic/lab06/submit/calculator_hex.v
-  D:/Programs/lab-digital-logic/lab06/submit/calculator_top.v
+  Z:/Programs/lab-digital-logic/lab06/submit/calculator_display.v
+  Z:/Programs/lab-digital-logic/lab06/submit/calculator_hex.v
+  Z:/Programs/lab-digital-logic/lab06/submit/calculator_top.v
 }
-read_ip -quiet D:/Programs/lab-digital-logic/lab06/lab/lab.srcs/sources_1/ip/clk_div/clk_div.xci
-set_property used_in_implementation false [get_files -all d:/Programs/lab-digital-logic/lab06/lab/lab.srcs/sources_1/ip/clk_div/clk_div_board.xdc]
-set_property used_in_implementation false [get_files -all d:/Programs/lab-digital-logic/lab06/lab/lab.srcs/sources_1/ip/clk_div/clk_div.xdc]
-set_property used_in_implementation false [get_files -all d:/Programs/lab-digital-logic/lab06/lab/lab.srcs/sources_1/ip/clk_div/clk_div_ooc.xdc]
+read_ip -quiet Z:/Programs/lab-digital-logic/lab06/lab/lab.srcs/sources_1/ip/clk_div/clk_div.xci
+set_property used_in_implementation false [get_files -all z:/Programs/lab-digital-logic/lab06/lab/lab.srcs/sources_1/ip/clk_div/clk_div_board.xdc]
+set_property used_in_implementation false [get_files -all z:/Programs/lab-digital-logic/lab06/lab/lab.srcs/sources_1/ip/clk_div/clk_div.xdc]
+set_property used_in_implementation false [get_files -all z:/Programs/lab-digital-logic/lab06/lab/lab.srcs/sources_1/ip/clk_div/clk_div_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -48,8 +49,8 @@ set_property used_in_implementation false [get_files -all d:/Programs/lab-digita
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/Programs/lab-digital-logic/lab06/lab/lab.srcs/constrs_1/new/lab.xdc
-set_property used_in_implementation false [get_files D:/Programs/lab-digital-logic/lab06/lab/lab.srcs/constrs_1/new/lab.xdc]
+read_xdc Z:/Programs/lab-digital-logic/lab06/lab/lab.srcs/constrs_1/new/lab.xdc
+set_property used_in_implementation false [get_files Z:/Programs/lab-digital-logic/lab06/lab/lab.srcs/constrs_1/new/lab.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
