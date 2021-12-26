@@ -1,0 +1,7 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+index 6 finished
+====================================
+Test end!
+----PASS!!!
+$finish called at time : 16895 ns : File "D:/Programs/lab-digital-logic/help/calculator_hex/calculator_hex.srcs/sim_1/new/testbench.v" Line 139

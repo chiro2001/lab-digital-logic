@@ -1,0 +1,9 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto b844a140b00f4b55a9e5c8bcacf33447 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot testbench_func_synth xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2991] 'cal_result' is not declared under prefix 'u_calculator_hex' [D:/Programs/lab-digital-logic/lab06/calc_stu_pkg/testbench.v:125]
+ERROR: [VRFC 10-2991] 'cal_result' is not declared under prefix 'u_calculator_hex' [D:/Programs/lab-digital-logic/lab06/calc_stu_pkg/testbench.v:150]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'led_en' [D:/Programs/lab-digital-logic/lab06/calc_stu_pkg/testbench.v:162]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

@@ -1,0 +1,251 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7a100tfgg484-1",
+      "name": "design_2",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3"
+    },
+    "design_tree": {
+      "D_trigger_0": "",
+      "D_trigger_1": "",
+      "util_vector_logic_0": "",
+      "util_vector_logic_1": "",
+      "util_vector_logic_2": "",
+      "util_vector_logic_3": "",
+      "util_vector_logic_4": "",
+      "util_vector_logic_5": "",
+      "util_vector_logic_6": "",
+      "util_vector_logic_7": ""
+    },
+    "ports": {
+      "CP": {
+        "type": "clk",
+        "direction": "I"
+      },
+      "X": {
+        "type": "data",
+        "direction": "I"
+      },
+      "Z": {
+        "type": "data",
+        "direction": "O"
+      }
+    },
+    "components": {
+      "D_trigger_0": {
+        "vlnv": "xilinx.com:module_ref:D_trigger:1.0",
+        "xci_name": "design_2_D_trigger_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "D_trigger",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CP": {
+            "direction": "I"
+          },
+          "D": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O"
+          },
+          "Qb": {
+            "direction": "O"
+          }
+        }
+      },
+      "D_trigger_1": {
+        "vlnv": "xilinx.com:module_ref:D_trigger:1.0",
+        "xci_name": "design_2_D_trigger_0_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "D_trigger",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CP": {
+            "direction": "I"
+          },
+          "D": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O"
+          },
+          "Qb": {
+            "direction": "O"
+          }
+        }
+      },
+      "util_vector_logic_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "design_2_util_vector_logic_0_0",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "util_vector_logic_1": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "design_2_util_vector_logic_0_1",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "util_vector_logic_2": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "design_2_util_vector_logic_1_0",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "or"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "util_vector_logic_3": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "design_2_util_vector_logic_1_1",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "util_vector_logic_4": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "design_2_util_vector_logic_3_0",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "util_vector_logic_5": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "design_2_util_vector_logic_0_2",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "util_vector_logic_6": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "design_2_util_vector_logic_5_0",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "util_vector_logic_7": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "design_2_util_vector_logic_2_0",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "or"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      }
+    },
+    "nets": {
+      "util_vector_logic_1_Res": {
+        "ports": [
+          "util_vector_logic_1/Res",
+          "util_vector_logic_2/Op1"
+        ]
+      },
+      "util_vector_logic_0_Res": {
+        "ports": [
+          "util_vector_logic_0/Res",
+          "util_vector_logic_2/Op2"
+        ]
+      },
+      "X_1": {
+        "ports": [
+          "X",
+          "util_vector_logic_0/Op1",
+          "util_vector_logic_1/Op1",
+          "util_vector_logic_3/Op1",
+          "util_vector_logic_4/Op1",
+          "util_vector_logic_5/Op2",
+          "util_vector_logic_6/Op2"
+        ]
+      },
+      "D_trigger_0_Q": {
+        "ports": [
+          "D_trigger_0/Q",
+          "util_vector_logic_0/Op2",
+          "util_vector_logic_6/Op1"
+        ]
+      },
+      "D_trigger_1_Q": {
+        "ports": [
+          "D_trigger_1/Q",
+          "util_vector_logic_1/Op2",
+          "util_vector_logic_3/Op2"
+        ]
+      },
+      "util_vector_logic_3_Res": {
+        "ports": [
+          "util_vector_logic_3/Res",
+          "util_vector_logic_4/Op2"
+        ]
+      },
+      "util_vector_logic_4_Res": {
+        "ports": [
+          "util_vector_logic_4/Res",
+          "Z"
+        ]
+      },
+      "CP_1": {
+        "ports": [
+          "CP",
+          "D_trigger_0/CP",
+          "D_trigger_1/CP"
+        ]
+      },
+      "util_vector_logic_2_Res": {
+        "ports": [
+          "util_vector_logic_2/Res",
+          "D_trigger_1/D"
+        ]
+      },
+      "util_vector_logic_5_Res": {
+        "ports": [
+          "util_vector_logic_5/Res",
+          "util_vector_logic_7/Op2"
+        ]
+      },
+      "util_vector_logic_6_Res": {
+        "ports": [
+          "util_vector_logic_6/Res",
+          "util_vector_logic_7/Op1"
+        ]
+      },
+      "util_vector_logic_7_Res": {
+        "ports": [
+          "util_vector_logic_7/Res",
+          "D_trigger_0/D"
+        ]
+      },
+      "D_trigger_0_Qb": {
+        "ports": [
+          "D_trigger_0/Qb",
+          "util_vector_logic_5/Op1"
+        ]
+      }
+    }
+  }
+}

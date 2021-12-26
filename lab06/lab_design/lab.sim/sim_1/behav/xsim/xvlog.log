@@ -1,0 +1,17 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Programs/lab-digital-logic/lab06/lab/lab.srcs/sources_1/ip/clk_div/clk_div_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Programs/lab-digital-logic/lab06/lab/lab.srcs/sources_1/ip/clk_div/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Programs/lab-digital-logic/lab06/submit/calculator_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_display
+INFO: [VRFC 10-311] analyzing module calculator_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Programs/lab-digital-logic/lab06/submit/calculator_hex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculator_hex
+INFO: [VRFC 10-311] analyzing module calculator_alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Programs/lab-digital-logic/lab06/submit/calculator_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculator_top
+INFO: [VRFC 10-2458] undeclared symbol locked, assumed default net type wire [D:/Programs/lab-digital-logic/lab06/submit/calculator_top.v:29]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Programs/lab-digital-logic/lab06/calc_stu_pkg/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Programs/lab-digital-logic/lab06/lab/lab.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
